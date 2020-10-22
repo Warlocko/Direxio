@@ -1,0 +1,44 @@
+.productImg{
+    width: 100%;
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.20);
+}
+
+p{
+    margin: 5px;
+}
+
+.centered{
+    text-align: center;
+}
+
+.nameText{
+    color: #4E6665;
+    font-weight: 500;
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+.bodyText{
+    color: #dbd9d7;
+    font-size: 13px;
+}
+
+.priceText{
+    position: relative;
+    color: white;
+    padding: 5px;
+    background-color: #4E6665;
+    width: 50px;
+    letter-spacing: 2px;
+    left: 50%;
+    margin-left: -25px;
+    margin-top: 50px;
+    bottom: 0;
+}
+
+@media only screen and  (max-width: 800px){
+
+    .bodyText{
+        font-size: 11px;
+    }
+}

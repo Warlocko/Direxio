@@ -1,0 +1,43 @@
+<div id="bookingWrapper">
+    <p id="schedulerTitle">{{schedulerTitle}}</p>
+    <p id="schedulerSubtitle">{{schedulerSubtitle}}</p>
+</div>
+<div id="bookingFormWrapper">
+    <p id="contactInfo">
+        <i class="fas fa-phone-alt" style="color: #71c0ab;"></i>
+        <span>214-909-0703</span><br>
+        <i class="far fa-envelope" style="color: #71c0ab;"></i>
+        <span>infusionspa@contact.com</span><br>
+        <i class="fas fa-map-marker-alt" style="color: #71c0ab;"></i>
+        <span>Firewheel Salons 4280 Lavon Drive<br>Garland, Tx 75040. Suite #27</span>
+    </p>
+    <form id="bookingForm">
+        <input type="text" id="fullNameField" name="fullname" class="formFullWidth" placeholder={{schedulerFormName}}>
+        <select id = "myList" class="formFullWidth">
+            <option value="" selected disabled hidden>{{schedulerService}}</option>
+            <option value = "1">one</option>
+            <option value = "2">two</option>
+            <option value = "3">three</option>
+            <option value = "4">four</option>
+        </select>
+        <input type="text" id="phoneField" name="phoneNumber" class="formHalfWidth firstInput" placeholder={{schedulerPhone}}>
+        <input type="text" id="emailField" name="eMail" class="formHalfWidth lastInput" placeholder="E-mail">
+        <select id ="myList" class="formHalfWidth firstInput">
+            <option value="" selected disabled hidden>{{schedulerDate}}</option>
+            <option value = "1">Service</option>
+            <option value = "2">two</option>
+            <option value = "3">three</option>
+            <option value = "4">four</option>
+        </select>
+        <select id = "myList" class="formHalfWidth lastInput">
+            <option value="" selected disabled hidden>{{schedulerHour}}</option>
+            <option value = "1">Service</option>
+            <option value = "2">two</option>
+            <option value = "3">three</option>
+            <option value = "4">four</option>
+        </select>
+        <input type="submit" value={{schedulerBookBtn}} id="schedulerBookBtn">
+    </form>
+    <p id="disclaimerText"><span style="color:#71c0ab;">*</span> {{disclaimer}}</p>
+</div>
+<img src="../../../assets/img/booking.PNG" id="bookingImg">

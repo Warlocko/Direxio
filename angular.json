@@ -28,7 +28,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "./node_modules/swiper/swiper-bundle.css"
             ],
             "scripts": []
           },
@@ -123,6 +124,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "Direxio"
+    }
+  },
+  "defaultProject": "Direxio",
+  "cli": {
+    "analytics": "996b8369-9a55-4363-bf47-b4da913512a0"
+  }
 }

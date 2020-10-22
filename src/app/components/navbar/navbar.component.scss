@@ -1,0 +1,106 @@
+#navbarBackground{
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 75px;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: #8DC5B5;
+}
+
+#mobileBookNow{
+    display: none;
+}
+
+#hamburgerMenu{
+    display: none;
+}
+
+#navbarLogo{
+    height: 100%;
+    margin-left: 5%;
+}
+
+#navbarLinks{
+    position: absolute;
+    display: inline;
+    right: 30px;
+}
+
+#navbarLinks a{
+    margin-left: 25px;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+
+#navbarLinksMobile{
+    display: none;
+}
+
+.bookBtn{
+    padding: 5px 20px;
+    background-color: #4E6665;
+}
+
+@media only screen and (max-width: 800px){
+    #navbarBackground{
+        overflow: hidden;
+        height: 100px;
+    }
+
+    #mobileBookNow{
+        position: absolute;
+        display: block;
+        width: auto;
+        font-size: 10px;
+        right: 30px;
+        bottom: 10px;
+        padding: 6px 40px;
+        color: white;
+        letter-spacing: 2px;
+    }
+
+    #navbarBackground #navbarLinks{
+        display: none;
+    }
+
+    #hamburgerMenu {
+        background: transparent;
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 0;
+        width: 50px;
+        height: 30px;
+        font-size: 40px;
+        color: #4E6665;
+        cursor: pointer;
+    }
+
+    .hamburgerMenuVisible{
+        display: flex !important;
+    }
+
+    #navbarLinksMobile{
+        position: fixed;
+        top: 100px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #navbarLinksMobile a {
+        height: 60px;
+        line-height: 60px;
+        background-color: #8DC5B5;
+        width: 100%;
+        text-align: center;
+        color: white;
+        font-size: 20px;
+        letter-spacing: 3px;
+    }
+
+}

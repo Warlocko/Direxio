@@ -1,1 +1,74 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.petal{
+    position: fixed;
+    width: 150px;
+    height: 150px;
+    z-index: 11;
+}
+
+.petalImg{
+    width: 100%;
+    height: 100%;
+}
+
+#petal1{
+    top: 400px;
+}
+
+#petal2{
+    right: 10px;
+    top: 80px;
+}
+
+#petal3{
+    right: 70px;
+    top: 490px;
+    z-index: 8;
+}
+
+#petal4{
+    top: 650px;
+    left: 10px;
+    z-index: 8;
+}
+
+#petal5{
+    top: 1000px;
+}
+
+#petal6{
+    top: 1000px;
+    right: 50px;
+}
+
+#petal7{
+    top: 1500px;
+}
+
+#petal8{
+    top: 1800px;
+    right: 70px;
+    z-index: 7;
+}
+
+#petal9{
+    top: 2100px;
+}
+
+#petal10{
+    top: 2300px;
+    right: 10px;
+}
+
+#petal11{
+    top: 2450px;
+    right: 10px;
+    width: 250px;
+    height: 250px;
+    transform: rotate(340deg);
+}

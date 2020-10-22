@@ -1,0 +1,145 @@
+#aboutImg{
+    position: relative;
+    background-image: url("../../../assets/img/Jacky.jpeg");
+    background-size: 100%;
+    background-position: 0 -50px;
+    margin-top: 150px;
+    width: 450px;
+    height: 270px;
+}
+
+#aboutLogo{
+    position: absolute;
+    width: 10%;
+    bottom: 10px;
+    right: 10px;
+    opacity: .5;
+}
+
+#aboutInfo{
+    width: 40%;
+    margin-left: 5%;
+    color: white;
+}
+
+#aboutTitle{
+    font-size: 40px;
+    margin-bottom: 57px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    letter-spacing: 8px;
+}
+
+#aboutText{
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+#aboutQuote{
+    font-weight: 400;
+    font-style: italic;
+}
+
+#aboutCardWrapper{
+    position: absolute;
+    display: flex;
+    bottom: -100px;
+    width: 80%;
+}
+
+.aboutCard{
+    width: 25%;
+    margin-left: 4.5%;
+    margin-right: 4.5%;
+    padding: 40px 2% 0 2%;
+    background-color: #4E6665;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    box-shadow: 16px 16px 25px rgba(0, 0, 0, 0.20);
+    z-index: 11;
+}
+
+.cardImg{
+    position: relative;
+    width: 75px;
+    top: 0;
+}
+
+#largeIcon{
+    width: 53px;
+}
+
+.cardTitle{
+    letter-spacing: 2px;
+    font-size: 1em;
+    line-height: 24px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.cardText{
+    font-weight: 300;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+#aboutBtn{
+    position: absolute;
+    bottom: -160px;
+    background-color: #4E6665;
+    padding: 10px 35px;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+@media only screen and  (max-width: 800px){
+    #aboutImg{
+        width: 85%;
+        max-width: 480px;
+        min-width: 320px;
+    }
+
+    #aboutInfo{
+        width: 85%;
+        max-width: 480px;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    #aboutTitle{
+        margin-top: -380px;
+        margin-bottom: 380px;
+        font-size: 30px;
+    }
+
+    #aboutText{
+        text-align: left;
+    }
+    
+    #aboutQuote{
+        text-align: left;
+    }
+
+    #aboutCardWrapper{
+        position: relative;
+        width: 70%;
+        flex-direction: column;
+    }
+
+    .aboutCard{
+        width: 100%;
+        margin: 0;
+        margin-bottom: 30px;
+        padding: 30px;
+        bottom: -30px;
+    }
+
+    #aboutBtn{
+        width: 70%;
+        text-align: center;
+    }
+}

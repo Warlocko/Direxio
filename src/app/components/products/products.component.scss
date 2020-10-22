@@ -1,0 +1,78 @@
+$dark-green: #4E6665;
+
+#productsTitle{
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: 8px;
+    font-size: 40px;
+    color: $dark-green;
+}
+
+#productsWrapper{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+app-single-product{
+    position: relative;
+    width: 20%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-bottom: 50px;
+    z-index: 13;
+}
+
+#productsText{
+    text-align: center;
+    width: 70%;
+    margin-left: 15%;
+    font-size: 18px;
+    font-weight: 500;
+    color: $dark-green;
+}
+
+#consultBtn{
+    position: relative;
+    padding: 10px 20px;
+    background-color: #4E6665;
+    color: white;
+    font-size: 12px;
+    left: 50%;
+    margin-left: -94px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+@media only screen and  (max-width: 800px){
+    #productsTitle{
+        font-size: 8vw;
+        letter-spacing: 1px;
+    }
+
+    app-single-product{
+        width: 40%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    #consultBtn{
+        width: 50%;
+    }
+
+    #productsText{
+        margin-top: -30px;
+    }
+
+    #consultBtn{
+        display: block;
+        left: 0;
+        width: 70%;
+        margin-left: 15%;
+        text-align: center;
+    }
+}

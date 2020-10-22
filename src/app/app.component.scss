@@ -1,0 +1,96 @@
+app-navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+app-intro-section{
+    position: relative;
+    display: flex;
+    height: 550px;
+    width: 100%;
+    background-color: #fbf9f7;
+}
+
+app-treatments{
+    position: relative;
+    display: block;
+    background-color: #fbf9f7;
+    padding-bottom: 30px;
+}
+
+app-products{
+    position: relative;
+    display: block;
+    margin: 0;
+    background-color: #fbf9f7;
+    padding-bottom: 50px;
+}
+
+app-about{
+    position: relative;
+    background-color: #8DC5B5;
+    padding-top: 30px;
+    padding-bottom: 250px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 8;
+}
+
+app-reviews{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding-top: 200px;
+    align-items: center;
+    justify-content: center;
+    background-color: #fbf9f7;
+    z-index: 0;
+    padding-bottom: 20px;
+}
+
+app-scheduler{
+    position: relative;
+    display: block;
+    color: white;
+    padding-top: 150px;
+    background-color: #fbf9f7;
+    padding-bottom: 200px;
+}
+
+app-footer{
+    position: relative;
+    display: flex;
+    background-color: #8DC5B5;
+    color: white;
+}
+
+@media only screen and (max-width: 1000px){
+    app-intro-section{
+        padding-top: 100px;
+        flex-direction: column;
+        height: auto;
+        padding-bottom: 30px;
+    }
+}
+
+
+@media only screen and (max-width: 800px){
+    app-about{
+        flex-direction: column;
+        padding-bottom: 0;
+    }
+
+    app-scheduler{
+        padding-bottom: 150px;
+    }
+
+    app-footer{
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+}
