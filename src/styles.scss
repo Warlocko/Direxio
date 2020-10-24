@@ -4,6 +4,10 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
+a, button{
+    cursor: pointer;
+}
+
 .petal{
     position: fixed;
     width: 150px;

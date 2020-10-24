@@ -19,6 +19,10 @@ i{
     margin-right: 10px;
 }
 
+option{
+    text-transform: capitalize;
+}
+
 #schedulerSubtitle{
     position: relative;
     letter-spacing: 2px;
@@ -54,6 +58,37 @@ i{
     letter-spacing: 1px;
     font-weight: 300;
     line-height: 30px;
+}
+
+.asteriskDiv{
+    position: relative;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.asteriskDiv p{
+    position: absolute;
+    left: -10px;
+    color: black;
+    top: -8px;
+}
+
+.asteriskDivHalf p{
+    position: absolute;
+    left: -10px;
+    color: black;
+    top: -8px;
+}
+
+.lastInput p{
+    left: -9px;
+}
+
+.asteriskDivHalf{
+    position: relative;
+    width: 39%;
+    margin-left: 1%;
+    margin-right: 1%;
 }
 
 #bookingForm{
@@ -106,14 +141,16 @@ text-shadow: 0 0 0 #000;
 
 
 .formFullWidth{
-    width: 80%;
-    margin: 10px 10%;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
     height: 35px;
 }
 
 .formHalfWidth{
-    width: 39%;
-    margin: 10px 1%;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
     height: 35px;
 }
 
@@ -133,6 +170,7 @@ text-shadow: 0 0 0 #000;
     margin-top: 25px;
     letter-spacing: 2px;
     margin-bottom: 25px;
+    cursor: pointer;
 }
 
 #bookingImg{
@@ -178,9 +216,16 @@ text-shadow: 0 0 0 #000;
     }
 
     .formHalfWidth{
+        width: 100%
+    }
+
+    .asteriskDivHalf{
         width: 80%;
         margin-left: 10%;
-        margin-right: 0;
+    }
+
+    .lastInput p{
+        left: -10px;
     }
 
     #bookingForm{

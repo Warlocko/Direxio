@@ -1,15 +1,7 @@
 <p id="productsTitle">{{ 'PRODUCTS.productsTitle' | translate }}</p>
-<div id="productsWrapper" *ngFor="let producto of productosLista">
-    <app-single-product imgSrc="../../../../assets/img/Day Cream.png" [name]="dayCreamName" [text]="dayCreamText" price=35></app-single-product>
-    <app-single-product imgSrc="../../../../assets/img/Night Cream.png" [name]="nightCreamName" [text]="nightCreamText" price=40></app-single-product>
-    <app-single-product imgSrc="../../../../assets/img/Day _ Night.png" [name]="dayNightCreamName" [text]="dayNightCreamText" price=45></app-single-product>
-    <app-single-product imgSrc="../../../../assets/img/Eye Cream.png" [name]="eyeCreamName" [text]="eyeCreamText" price=35></app-single-product>
-    <app-single-product imgSrc="../../../../assets/img/Acido H.png" [name]="hAcidName" [text]="hAcidText" price=65></app-single-product>
-    <app-single-product imgSrc="../../../../assets/img/Face Scrub.png" [name]="faceScrubName" [text]="faceScrubText" price=65></app-single-product>
-    <app-single-product imgSrc="../../../../assets/img/Retine A.png" [name]="retinName" [text]="retinText" price=120></app-single-product>
-    <app-single-product imgSrc="../../../../assets/img/Furry Treatment.png" [name]="furryName" [text]="furryText" price=7></app-single-product>
-    <!--<app-single-product imgSrc="../../../assets/img/Furry Treatment.png" [name]="producto.name" [text]="producto.description" [price]=producto.price></app-single-product>-->
+<div id="productsWrapper">
+    <app-single-product [imgSrc]="producto.image" [name]="producto.name" [text]="producto.description" [price]=producto.price *ngFor="let producto of productosLista"></app-single-product>
 </div>
 <p id="productsText">{{ 'PRODUCTS.productsText' | translate }}</p>
-<a id="consultBtn">{{ 'PRODUCTS.consultText' | translate }}</a>
+<a id="consultBtn" (click)="scroll('book')">{{ 'PRODUCTS.consultText' | translate }}</a>
 

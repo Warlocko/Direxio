@@ -1,5 +1,6 @@
 import { Component, OnInit, Directive, Input, ElementRef, HostListener } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
+import { BookingsService } from 'src/app/services/bookings.service';
 
 @Component({
   selector: 'app-scheduler',
@@ -7,9 +8,22 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['./scheduler.component.scss']
 })
 export class SchedulerComponent implements OnInit {
-  schedulerTreatments ;
+  schedulerTreatments;
+  bookingsList
+  booking = {
+    Nombre: "",
+    Email: "",
+    Tratamiento: "",
+    Telefono: "",
+    Fecha: "",
+    Hora: ""
+  };
 
-  constructor(private translate: TranslateService) { 
+  constructor(private translate: TranslateService, private bookingService : BookingsService) { 
+    this.bookingService.getBookings().subscribe(res => {
+      this.bookingsList = res;
+      console.log(this.bookingsList)
+    })
     this.translate.stream('SCHEDULER').subscribe(res => {
       if(this.translate.currentLang=='en'){
         this.schedulerTreatments = [
@@ -38,7 +52,7 @@ export class SchedulerComponent implements OnInit {
       ]
       }else{
         this.schedulerTreatments = [
-          {treatment: "Peeling Químico"},
+          {treatment: "PEELING QUÍMICO"},
           {treatment: "MICRODERMOABRASIÓN"},
           {treatment: "HIDRAFACIAL"},
           {treatment: "MICRONEEDLING"},
@@ -69,4 +83,14 @@ export class SchedulerComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  submit(){
+    if (this.bookingsList.some(e => e.Fecha === this.booking.Fecha) && this.bookingsList.some(e => e.Hora === this.booking.Hora)) {
+      alert('Ese espacio ya está apartado.\n Favor de seleccionar otro.')
+    }else if(this.booking.Nombre=="" || this.booking.Tratamiento=="" || this.booking.Email=="" || this.booking.Telefono=="" || this.booking.Fecha=="" || this.booking.Hora==""){
+      alert('Por favor llene todos los campos para agendar su cita.')
+    }else{
+      this.bookingService.addBooking(this.booking);
+      alert('Su cita ha sido agendada con éxito.')
+    }
+  }
 }

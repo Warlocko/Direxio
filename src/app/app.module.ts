@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { IntroSectionComponent } from './translated/components/intro-section/intro-section.component';
@@ -26,6 +26,7 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { HomeComponent } from './translated/components/home/home.component';
 import { AdminComponent } from './admin/admin.component';
 import { AdminSignupComponent } from './admin-signup/admin-signup.component';
+import { MatDatepickerModule } from '@angular/material/datepicker'
 
 const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
   direction: 'horizontal',
@@ -56,6 +57,8 @@ export function HttpLoaderFactory(http: HttpClient){
   imports: [
     BrowserModule,
     AppRoutingModule,
+    MatDatepickerModule,
+    FormsModule,
     [IvyCarouselModule],
     SwiperModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),

@@ -208,13 +208,21 @@ app-treatment-slide{
 
 @media only screen and (max-width: 800px){
 
+    .popup{
+        top: 200px;
+        flex-direction: column;
+    }
+
     .popupImg{
-        display: none;
+       width: auto;
+       max-width: 320px;
+       height: auto;
     }
 
     .popupText{
         max-width: 90%;
         padding-right: 5%;
+        margin-bottom: 0;
     }
 
     #treatmentsTitle{
