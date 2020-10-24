@@ -1,0 +1,15 @@
+#signInWrapper{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    background-color: #8DC5B5;
+    color: white;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+input{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
