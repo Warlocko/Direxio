@@ -1,0 +1,45 @@
+<div id="navbarBackground">
+    <img src="../../../../assets/img/logo.png" id="navbarLogo">
+    <div id="navbarLinks">
+        <a (click)="scroll('intro')">{{'NAVBAR.home'| translate }}</a>
+        <a (click)="scroll('treatments')">{{'NAVBAR.treatments' | translate }}</a>
+        <a (click)="scroll('products')">{{'NAVBAR.products' | translate }}</a>
+        <a (click)="scroll('aboutJacky')">{{'NAVBAR.aboutJacky' | translate }}</a>
+        <a (click)="scroll('reviews')">{{'NAVBAR.reviews' | translate }}</a>
+        <a (click)="scroll('book')" class="bookBtn">{{'NAVBAR.bookNow'| translate }}</a>
+    </div>
+    <a (click)="scroll('book')" class="bookBtn" id="mobileBookNow">{{'NAVBAR.bookNow' | translate }}</a>
+    <a class="icon" id="hamburgerMenu" (click)="toggleMenu()">
+        <i class="fa fa-bars"></i>
+    </a>
+</div>
+<div id="navbarLinksMobile">
+    <a (click)="scroll('intro')">{{'NAVBAR.home'| translate }}</a>
+    <a (click)="scroll('treatments')">{{'NAVBAR.treatments' | translate }}</a>
+    <a (click)="scroll('products')">{{'NAVBAR.products' | translate }}</a>
+    <a (click)="scroll('reviews')">{{'NAVBAR.reviews' | translate }}</a>
+    <a (click)="scroll('aboutJacky')">{{'NAVBAR.aboutJacky' | translate }}</a>
+</div>
+
+<app-intro-section id="intro"></app-intro-section>
+<app-treatments id="treatments"></app-treatments>
+<app-products id="products"></app-products>
+<app-about id="aboutJacky"></app-about>
+<app-reviews id="reviews"></app-reviews>
+<app-scheduler id="book"></app-scheduler>
+<app-footer></app-footer>
+
+<div appParallax [ratio]="0.5" class="petal" id="petal1"><img src="./assets/img/petal1.png" class="petalImg"></div>
+<div appParallax [ratio]="0.5" class="petal" id="petal2"><img src="./assets/img/petal4.png" class="petalImg"></div>
+<div appParallax [ratio]="0.5" class="petal" id="petal3"><img src="./assets/img/petal3.png" class="petalImg"></div>
+<div appParallax [ratio]="0.5" class="petal" id="petal4"><img src="./assets/img/petal2.png" class="petalImg"></div>
+<div appParallax [ratio]="0.5" class="petal" id="petal5"><img src="./assets/img/petal4.png" class="petalImg"></div>
+<div appParallax [ratio]="0.4" class="petal" id="petal6"><img src="./assets/img/petal3.png" class="petalImg"></div>
+<div appParallax [ratio]="0.5" class="petal" id="petal7"><img src="./assets/img/petal2.png" class="petalImg"></div>
+<div appParallax [ratio]="0.5" class="petal" id="petal8"><img src="./assets/img/petal1.png" class="petalImg"></div>
+<div appParallax [ratio]="0.5" class="petal" id="petal9"><img src="./assets/img/petal4.png" class="petalImg"></div>
+<div appParallax [ratio]="0.2" class="petal" id="petal10"><img src="./assets/img/petal3.png" class="petalImg"></div>
+<div appParallax [ratio]="0.5" class="petal" id="petal11"><img src="./assets/img/petal1.png" class="petalImg"></div>
+
+<button (click)="changeLang('es', 'esBtn')" class="langBtn chosenLangBtn" id="esBtn">ESP</button>
+<button (click)="changeLang('en', 'enBtn')" class="langBtn" id="enBtn">ENG</button>

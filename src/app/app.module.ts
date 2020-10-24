@@ -3,16 +3,15 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './components/navbar/navbar.component';
-import { IntroSectionComponent } from './components/intro-section/intro-section.component';
-import { TreatmentsComponent } from './components/treatments/treatments.component';
-import { TreatmentSlideComponent } from './components/treatment-slide/treatment-slide.component';
-import { ProductsComponent } from './components/products/products.component';
-import { SingleProductComponent } from './components/single-product/single-product.component';
-import { AboutComponent } from './components/about/about.component';
-import { ReviewsComponent } from './components/reviews/reviews.component';
-import { SchedulerComponent } from './components/scheduler/scheduler.component';
-import { FooterComponent } from './components/footer/footer.component';
+import { IntroSectionComponent } from './translated/components/intro-section/intro-section.component';
+import { TreatmentsComponent } from './translated/components/treatments/treatments.component';
+import { TreatmentSlideComponent } from './translated/components/treatment-slide/treatment-slide.component';
+import { ProductsComponent } from './translated/components/products/products.component';
+import { SingleProductComponent } from './translated/components/single-product/single-product.component';
+import { AboutComponent } from './translated/components/about/about.component';
+import { ReviewsComponent } from './translated/components/reviews/reviews.component';
+import { SchedulerComponent } from './translated/components/scheduler/scheduler.component';
+import { FooterComponent } from './translated/components/footer/footer.component';
 import { IvyCarouselModule } from 'angular-responsive-carousel';
 import { SwiperModule } from 'ngx-swiper-wrapper';
 import { SWIPER_CONFIG } from 'ngx-swiper-wrapper';
@@ -24,6 +23,9 @@ import { HttpClientModule, HttpClient } from '@angular/common/http'
 import { AngularFireModule } from '@angular/fire';
 import { environment } from '../environments/environment';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { HomeComponent } from './translated/components/home/home.component';
+import { AdminComponent } from './admin/admin.component';
+import { AdminSignupComponent } from './admin-signup/admin-signup.component';
 
 const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
   direction: 'horizontal',
@@ -31,13 +33,12 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
 };
 
 export function HttpLoaderFactory(http: HttpClient){
-  return new TranslateHttpLoader(http)
+  return new TranslateHttpLoader(http, '../assets/languages/', '.json')
 }
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent,
     IntroSectionComponent,
     TreatmentsComponent,
     TreatmentSlideComponent,
@@ -47,7 +48,10 @@ export function HttpLoaderFactory(http: HttpClient){
     ReviewsComponent,
     SchedulerComponent,
     FooterComponent,
-    ParallaxDirective
+    ParallaxDirective,
+    HomeComponent,
+    AdminComponent,
+    AdminSignupComponent
   ],
   imports: [
     BrowserModule,
@@ -72,6 +76,7 @@ export function HttpLoaderFactory(http: HttpClient){
       useValue: DEFAULT_SWIPER_CONFIG
     }
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  exports: [TranslateModule]
 })
 export class AppModule { }

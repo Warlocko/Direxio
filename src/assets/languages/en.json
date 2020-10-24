@@ -1,0 +1,164 @@
+{
+    "NAVBAR": {
+        "home": "Home",
+        "treatments": "Treatments",
+        "products" : "Products",
+        "aboutJacky" : "About Jacky",
+        "reviews" : "Reviews",
+        "bookNow" : "BOOK NOW!"
+    },
+    "INTRO": {
+        "introText": "Not only taking care of your skin, but also pampering yourself.",
+        "bookNow": "BOOK NOW!"
+    },
+    "TREATMENTS": {
+        "treatmentsTitle": "Personalized treatments\n according to your needs",
+        "treatmentsSubtitle": "We don't charge you for extra things",
+        "buttonFirst": "Face",
+        "buttonSecond": "Body",
+        "buttonThird": "More",
+        "faceTreatments": [
+            {
+                "name": "Chemical Peel",
+                "description": "A chemical peel is a technique used to improve the appearance of the face, neck, hands and body skin. A chemical solution is applied that causes the exfoliation and re-texturization of your skin by removing the outer layers. The new and regenerated skin is usually smoother and less wrinkled than the old one. The first days it can cause sensitiveness at the sun exposure.",
+                "img": "../../../../../assets/img/Face/1.png"
+            },{
+                "name": "Microdermoabrassion",
+                "description": "Microdermabrasion uses a minimally abrasive instrument to gently sand your skin, removing the thicker and uneven outer layer.\n This type of skin rejuvenation is used to treat light scarring, discoloration, sun damage and stretch marks. Reduce fine lines and wrinkles, reduce or eliminate enlarged pores, treat acne and the scars left by acne and help thicken your collagen with a microdermasion treatment just for you.",
+                "img": "../../../../../assets/img/Face/2.png"
+            },{
+                "name": "Hydra Facial",
+                "description": "Es un tratamiento no invasivo aplicado en diferentes etapas. Combina los beneficios de la hidrodermoabrasión, peeling químico, extracciones sin dolor automatizadas (sin perforar), así como la nutrición de la piel a través de los antioxidantes, el ácido hialurónico y péptidos. El tratamiento es rápido y sin dejar la piel irritada.",
+                "img": "../../../../../assets/img/Face/3.png"
+            },{
+                "name": "Microneedling",
+                "description": "El microneedling es un rodillo dermatológico que está compuesto por pequeñas agujas con las que pincha la piel. El objetivo de este tratamiento es generar nuevo colágeno y reducir imperfecciones de la piel para hacerla más suave, firme y tonificada. Usualmente es usada para tratamientos faciales, pero también puede ser usada para reducir cicatrices causadas por el acné, arrugas y poros abiertos.",
+                "img": "../../../../../assets/img/Face/4.png"
+            },{
+                "name": "Dermaplaning",
+                "description": "A través de una cuchilla dermatológica se remueven las células y vello logrando un efecto de luminosidad en la piel. Este tratamiento puede ser combinado con cualquier facial que elijas.",
+                "img": "../../../../../assets/img/Face/5.png"
+            },{
+                "name": "Detox Facial + Dermoabrassion",
+                "description": "Es un facial que dura entre 45 y 60 minutos en el que se aplican vapor, extracciones y una máscara facial para remover todas las células muertas causadas por la contaminación en el aire.",
+                "img": "../../../../../assets/img/Face/6.png"
+            },{
+                "name": "Acne Facial",
+                "description": "This service includes LED blue light therapy to kill acne and bacteria, promote clean skin healing and extractions . Depending on the acne condition we recommend full treatment sessions which consists in 6 sessions of 60 minutes per session.",
+                "img": "../../../../../assets/img/Face/7.png"
+            },{
+                "name": "Sun Spots / Hiperpigmentation",
+                "description": "It is a procedure from 50 to 60 minutes that will lighten the dark spots of your skin layer by layer. It can be applied to all types of skin.",
+                "img": "../../../../../assets/img/Face/8.png"
+            },{
+                "name": "Mommy to be Facial",
+                "description": "This facial will give you radiant skin while improving pigmentation, reducing fine lines and wrinkles, and fighting acne, melasma and rosacea.",
+                "img": "../../../../../assets/img/Face/9.png"
+            },{
+                "name": "24k Gold Facial",
+                "description": "The 24K gold facial provides nutrients, strengthens skin elasticity, and moisturizes the skin.",
+                "img": "../../../../../assets/img/Face/10.png"
+            },{
+                "name": "Signature Infusion Spa Facial",
+                "description": "Is a facial therapy and massage that leaves your skin cleaner, softer, younger, and truly transformed. It helps to clear clogged pores, to quench parched skin to remove dead cells, to tighten the skin through lymphatic drainage massage.",
+                "img": "../../../../../assets/img/Face/11.png"
+            },{
+                "name": "Just for Men",
+                "description": "This treatment removes blackheads produced by the pollution. It shaves bumps and in-grown hair, also it kills bacteria that cause them. This treatment leaves the skin soft and smooth while cleaning the sun spots.",
+                "img": "../../../../../assets/img/Face/12.png"
+            },{
+                "name": "Customized Peel",
+                "description": "If you want your skin to look younger, more vibrant, and tighter, then you should come for one of our customized peel sessions. A peel will help restore and renew the surface of your skin by shedding a few layers of your skin evenly.",
+                "img": "../../../../../assets/img/Face/13.png"
+            },{
+                "name": "Rosacea Treatment",
+                "description": "Reduce the skin inflammation.",
+                "img": "../../../../../assets/img/Face/14.png"
+            },{
+                "name": "Nonsurgical Skin Tightening",
+                "description": "Minimize the appearance of loose skin, wrinkles by prompting collagen.",
+                "img": "../../../../../assets/img/Face/15.png"
+            }
+        ],
+        "bodyTreatments": [
+            {
+                "name": "BACKCIAL",
+                "description": "Designed to treat back acne and redness, this customized “backcial” will leave your back summer ready and as clear as the summer skies.",
+                "img": "../../../../../assets/img/Body/1.png"
+            },{
+                "name": "BODY SCRUB TREATMENT",
+                "description": "Promoting efficient circulation and skin cell turnover. Removing dead cells from the skin's surface. Smoothing and softening rough, dry skin. Helps ingrown hairs and smoothing razor bumps.",
+                "img": "../../../../../assets/img/Body/2.png"
+            },{
+                "name": "EAR CANDLE TREATMENT",
+                "description": "Ear candle is a hollow cone candle made of wax-covered fabric. The pointed end is placed in your ear while the other end is lit. The warm “suction” is believed to remove earwax, improve hearing, and treat conditions like sinus infections and colds.",
+                "img": "../../../../../assets/img/Body/3.png"
+            },{
+                "name": "ELECTROLYSIS",
+                "description": "Electrolysis is a FDA-approved method of permanent hair removal. Electrolysis is suitable for any area of the body — including the eyebrows. No recovery time: People can resume their daily activities immediately after the procedure.",
+                "img": "../../../../../assets/img/Body/4.png"
+            }
+        ],
+        "otherTreatments": [
+            {
+                "name": "BROW TINTING / LASH TINTING",
+                "description": "This is a service to enhance your natural eyebrows. It is done with a semi-permanent dye and lasts about 2-3 weeks. Duration: 30 min.",
+                "img": "../../../../../assets/img/Other/1.png"
+            },{
+                "name": "MICROBLADING EYEBROW & SEMI PERMANENT MAKEUP",
+                "description": "It isn't permanent. Although microblading works in a similar way to a regular tattoo inking, it doesn't go anywhere near as deep into the skin. It can last between 12 months and three years. And it includes 2 free retouch ups. It can lasts anywhere between 18 months to 10 years .Works in 0.08 millimeters from the epidermis. Local anaesthetic. Perfect for eyebrows, eye liners and lips.",
+                "img": "../../../../../assets/img/Other/2.png"
+            },{
+                "name": "HYALURON PEN FOR PLUMP YOUR LIPS",
+                "description": "This treatment involves an hyaluronic acid filler without the use of needles or injections.",
+                "img": "../../../../../assets/img/Other/3.png"
+            }
+        ],
+        "swipeText": "Swipe to see all our treatments",
+        "covidText": "We have all Covid-19 Precautions",
+        "appointmentText": "Make an appointment"
+    },
+    "PRODUCTS": {
+        "productsTitle": "Our Products",
+        "productsText": "We give free consultation and orientation for the skin products that you use, but we also advise according to your skin type.",
+        "consultText": "Get a Consultation"
+    },
+    "ABOUT": {
+        "aboutTitle": "ABOUT JACKY",
+        "aboutText": "She is a medical grade aesthetician that has dedicated her professional life to helping men, women and teenagers with facial skin problems. She was born in La Paz, Bolivia but she has been living in Dallas for the past 16 years. In addition, she has been working for over 30 years in diverse facial treatments such as microdermoabrasion, acne treatments, extractions, peels, skin spots, microblading, laser treatments and others.",
+        "aboutQuote": "My heart fills with joy, when my clients are satisfied and fulfilled with my service." ,
+        "cardTitleFirst": "Licensed Aesthetician",
+        "cardTextFirst": "Over 30 years of experience.",
+        "cardTitleSecond": "Skin Expert",
+        "cardTextSecond": "Skin care consultation and recommendation.",
+        "cardTitleThird": "Licensed Laser Technician",
+        "cardTextThird": "Specialist in laser hair removal, photo facial, etc.",
+        "aboutButton": "Get a Consultation"
+    },
+    "REVIEWS": {
+        "reviewsTitle": "Reviews",
+        "reviewsSubtitle": "We care about our clients and their experience.",
+        "reviewText": "Jacky is very knowledgeable about her profession, products used and always takes her time to make sure what first my skin type. She always gives me quality service, makes sure I understand what my service includes, the benefits of the Facial given and the care I need to follow up with. Her spa is very cozy, clean and quiet... makes me feel like a special client every time! \n So glad I found her for my skin needs",
+        "swipeText": "Swipe to see all our reviews."
+    },
+    "SCHEDULER": {
+        "schedulerTitle": "Book Now",
+        "schedulerSubtitle": "We are excited to meet you and help you.",
+        "schedulerFormName": "Full Name",
+        "schedulerService": "Service",
+        "schedulerPhone": "Phone Number",   
+        "schedulerMail": "E-mail",
+        "schedulerDate": "Preferred Date",
+        "schedulerHour": "Preferred Hour",
+        "schedulerBookBtn": "BOOK NOW!",
+        "disclaimer": "If we don't answer, please leave a message. We will get back to you as soon as possible. \n Thank you"
+    },
+    "FOOTER": {
+        "home": "Home",
+        "products": "Products",
+        "clients": "Clients",
+        "reviews" : "Reviews",
+        "aboutJacky" : "About Jacky",
+        "bookNow": "BOOK NOW!"
+    }
+}

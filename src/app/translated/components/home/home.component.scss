@@ -1,0 +1,236 @@
+#navbarBackground{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    height: 75px;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: #8DC5B5;
+    z-index: 10000;
+}
+
+#mobileBookNow{
+    display: none;
+}
+
+#hamburgerMenu{
+    display: none;
+}
+
+#navbarLogo{
+    height: 100%;
+    margin-left: 5%;
+}
+
+#navbarLinks{
+    position: absolute;
+    display: inline;
+    right: 30px;
+}
+
+#navbarLinks a{
+    margin-left: 25px;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+
+#navbarLinksMobile{
+    display: none;
+}
+
+.bookBtn{
+    padding: 5px 20px;
+    background-color: #4E6665;
+}
+
+.langBtn{
+    position: absolute;
+    top: 80px;
+    width: 40px;
+    background-color: transparent;
+    color: #8DC5B5;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-size: 12px;
+    border: none;
+    font-weight: 700;
+    z-index: 100;
+}
+
+#esBtn{
+    right: 140px;
+}
+
+#enBtn{
+    right: 100px;
+}
+
+.chosenLangBtn{
+    background-color: #8DC5B5;
+    color: white;
+}
+
+app-intro-section{
+    position: relative;
+    display: flex;
+    height: 550px;
+    width: 100%;
+    background-color: #fbf9f7;
+}
+
+app-treatments{
+    position: relative;
+    display: block;
+    background-color: #fbf9f7;
+    padding-bottom: 30px;
+}
+
+app-products{
+    position: relative;
+    display: block;
+    margin: 0;
+    background-color: #fbf9f7;
+    padding-bottom: 50px;
+}
+
+app-about{
+    position: relative;
+    background-color: #8DC5B5;
+    padding-top: 30px;
+    padding-bottom: 250px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 8;
+}
+
+app-reviews{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding-top: 200px;
+    align-items: center;
+    justify-content: center;
+    background-color: #fbf9f7;
+    z-index: 0;
+    padding-bottom: 20px;
+}
+
+app-scheduler{
+    position: relative;
+    display: block;
+    color: white;
+    padding-top: 150px;
+    background-color: #fbf9f7;
+    padding-bottom: 200px;
+}
+
+app-footer{
+    position: relative;
+    display: flex;
+    background-color: #8DC5B5;
+    color: white;
+}
+
+@media only screen and (max-width: 1000px){
+    app-intro-section{
+        padding-top: 100px;
+        flex-direction: column;
+        height: auto;
+        padding-bottom: 30px;
+    }
+}
+
+
+@media only screen and (max-width: 800px){
+
+    #navbarBackground{
+        overflow: hidden;
+        height: 100px;
+    }
+
+    #mobileBookNow{
+        position: absolute;
+        display: block;
+        width: auto;
+        font-size: 10px;
+        right: 30px;
+        bottom: 10px;
+        padding: 6px 40px;
+        color: white;
+        letter-spacing: 2px;
+    }
+
+    #navbarBackground #navbarLinks{
+        display: none;
+    }
+
+    #hamburgerMenu {
+        background: transparent;
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 0;
+        width: 50px;
+        height: 30px;
+        font-size: 40px;
+        color: #4E6665;
+        cursor: pointer;
+    }
+
+    .hamburgerMenuVisible{
+        display: flex !important;
+    }
+
+    #navbarLinksMobile{
+        position: fixed;
+        top: 100px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        z-index: 1000;
+    }
+
+    #navbarLinksMobile a {
+        height: 60px;
+        line-height: 60px;
+        background-color: #8DC5B5;
+        width: 100%;
+        text-align: center;
+        color: white;
+        font-size: 20px;
+        letter-spacing: 3px;
+    }
+
+    app-about{
+        flex-direction: column;
+        padding-bottom: 0;
+    }
+
+    .langBtn{
+        top: 105px;
+    }
+
+    #enBtn{
+        right: 20px;
+    }
+
+    #esBtn{
+        right: 60px;
+    }
+
+    app-scheduler{
+        padding-bottom: 150px;
+    }
+
+    app-footer{
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+}

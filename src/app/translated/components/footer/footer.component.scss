@@ -1,0 +1,113 @@
+.footerSection{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+}
+
+#navigationSectionMobile{
+    display: none;
+}
+
+i{
+    margin-right: 10px;
+}
+
+#navigationSection{
+    padding-left: 10%;
+    padding-top: 50px;
+}
+
+#navigationSection a{
+    width: max-content;
+    letter-spacing: 2px;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+#footerBookBtn{
+    padding: 8px 40px;
+    background-color: #4E6665;
+    color: white;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+#logoSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footerLogo{
+    position: relative;
+    width: 200px;
+    max-height: 250px;
+}
+
+#contactInfoSection{
+    display: flex;
+    justify-content: center;
+}
+
+#contactInfoSection span{
+    max-width: 300px;
+}
+
+#footerContactInfo{
+    letter-spacing: 2px;
+    line-height: 30px;
+    font-size: 12px;
+}
+
+@media only screen and (max-width: 800px){
+    .footerSection{
+        width: 100%;
+    }
+
+    #logoSection{
+        margin-top: 20px;
+    }
+
+    #navigationSection{
+        display: none;
+    }
+
+    #navigationSectionMobile{
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
+    }
+
+    #navigationSectionMobile a{
+        letter-spacing: 2px;
+        font-size: 16px;
+        margin: 10px 0;
+    }
+
+    #footerBookBtn{
+        width: 80%;
+        letter-spacing: 3px !important;
+    }
+
+    #contactInfoSection{
+        font-size: 12px;
+        margin-top: 30px;
+    }
+
+    #footerContactInfo{
+        display: block;
+        white-space: pre-line;
+    }
+
+    i{
+        font-size: 20px;
+    }
+
+    #footerContactInfo span{
+        display: block;
+    }
+}

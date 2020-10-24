@@ -1,0 +1,45 @@
+<div id="bookingWrapper">
+    <p id="schedulerTitle">{{ 'SCHEDULER.schedulerTitle' | translate }}</p>
+    <p id="schedulerSubtitle">{{ 'SCHEDULER.schedulerSubtitle' | translate }}</p>
+</div>
+<div id="bookingFormWrapper">
+    <p id="contactInfo">
+        <i class="fas fa-phone-alt" style="color: #71c0ab;"></i>
+        <span>214-909-0703</span><br>
+        <i class="far fa-envelope" style="color: #71c0ab;"></i>
+        <span>infusionspa@contact.com</span><br>
+        <i class="fas fa-map-marker-alt" style="color: #71c0ab;"></i>
+        <span>Firewheel Salons 4280 Lavon Drive<br>Garland, Tx 75040. Suite #27</span>
+    </p>
+    <form id="bookingForm">
+        <input type="text" id="fullNameField" name="fullname" class="formFullWidth" placeholder="{{ 'SCHEDULER.schedulerFormName' | translate }}">
+        <select id = "myList" class="formFullWidth">
+            <option value="" selected disabled>{{ 'SCHEDULER.schedulerService' | translate }}</option>
+            <option value = "{{tratamiento.treatment}}" *ngFor="let tratamiento of schedulerTreatments" class="scheduleOption">{{tratamiento.treatment}}</option>
+        </select>
+        <input type="text" id="phoneField" name="phoneNumber" class="formHalfWidth firstInput" placeholder="{{ 'SCHEDULER.schedulerPhone' | translate }}">
+        <input type="text" id="emailField" name="eMail" class="formHalfWidth lastInput" placeholder="{{ 'SCHEDULER.schedulerMail' | translate }}">
+        <select id ="myList" class="formHalfWidth firstInput">
+            <option value="" selected disabled>{{ 'SCHEDULER.schedulerDate' | translate }}</option>   
+            <option value = "2">two</option>
+            <option value = "3">three</option>
+            <option value = "4">four</option>
+        </select>
+        <select id = "myList" class="formHalfWidth lastInput">
+            <option value="" selected disabled>{{ 'SCHEDULER.schedulerHour' | translate }}</option>
+            <option value ="7:00">7:00</option>
+            <option value ="8:00">8:00</option>
+            <option value ="9:00">9:00</option>
+            <option value ="10:00">11:00</option>
+            <option value ="11:00">12:00</option>
+            <option value ="12:00">13:00</option>
+            <option value ="13:00">14:00</option>
+            <option value ="14:00">15:00</option>
+            <option value ="15:00">16:00</option>
+            <option value ="16:00">17:00</option>
+        </select>
+        <input type="submit" value="{{ 'SCHEDULER.schedulerBookBtn' | translate }}" id="schedulerBookBtn">
+    </form>
+    <p id="disclaimerText"><span style="color:#71c0ab;">*</span> {{ 'SCHEDULER.disclaimer' | translate }}</p>
+</div>
+<img src="../../../../assets/img/booking.PNG" id="bookingImg">

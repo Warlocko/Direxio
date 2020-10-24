@@ -1,0 +1,52 @@
+<div id="treatmentsBackground">
+    <p id="treatmentsTitle">{{ 'TREATMENTS.treatmentsTitle' | translate }}</p>
+    <p id="treatmentsSubtitle">{{ 'TREATMENTS.treatmentsSubtitle' | translate }}</p>
+    <div id="treatmentsBtnWrapper">
+        <div class="treatmentsBtn chosenBtn" id="faceBtn" (click)="changeSlider('faceSwiper','faceBtn')">{{ 'TREATMENTS.buttonFirst' | translate }}</div>
+        <div class="treatmentsBtn" id="bodyBtn" (click)="changeSlider('bodySwiper','bodyBtn')">{{ 'TREATMENTS.buttonSecond' | translate }}</div>
+        <div class="treatmentsBtn" id="otherBtn" (click)="changeSlider('otherSwiper','otherBtn')">{{ 'TREATMENTS.buttonThird' | translate }}</div>
+    </div>
+</div>
+<div>
+    <div id="popupContainer" class="popup">
+        <div class="popupText">
+            <div class="popupHeader">
+                <img src="../../../../assets/img/logo.png" class="popupLogo">
+                <p class="popupTitle">
+                    {{popupTitle}}
+                </p>
+            </div>
+            <p class="popupBody">
+                {{popupText}}
+            </p>
+            <a class="appointmentBtn popupBtn">{{appointmentText}}</a>
+            <i class="fas fa-times exitBtn" (click)="hide()"></i>
+        </div>
+        <img [src]=popupImg class="popupImg">
+    </div>
+    <swiper [config]="config" class="chosenSlider" id="faceSwiper">
+        <!--<div class="treatmentsSlider" *ngFor="let slide of slideDataFace">
+            <div class="treatmentsPage">
+                    <app-treatment-slide [imgSrc]=slide.firstImg [name]=slide.firstName (click)="show(slide.firstName,slide.firstText,slide.firstImg)"></app-treatment-slide>
+                    <app-treatment-slide [imgSrc]=slide.secondImg [name]=slide.secondName (click)="show(slide.secondName,slide.secondText,slide.secondImg)"></app-treatment-slide>
+                    <app-treatment-slide [imgSrc]=slide.thirdImg [name]=slide.thirdName (click)="show(slide.thirdName,slide.thirdText,slide.thirdImg)"></app-treatment-slide>
+            </div>
+        </div>-->
+        <div class="treatmentsSlider" *ngFor="let slide of faceTreatments">
+            <app-treatment-slide [imgSrc]=slide.img [name]=slide.name (click)="show(slide.name,slide.description,slide.img)"></app-treatment-slide>
+        </div>
+    </swiper>
+    <swiper [config]="config" class="chosenSlider" id="bodySwiper">
+        <div class="treatmentsSlider" *ngFor="let slide of bodyTreatments">
+                <app-treatment-slide [imgSrc]=slide.img [name]=slide.name (click)="show(slide.name,slide.description,slide.img)"></app-treatment-slide>
+        </div>
+    </swiper>
+    <swiper [config]="config" class="chosenSlider" id="otherSwiper">
+        <div class="treatmentsSlider" *ngFor="let slide of otherTreatments">
+                <app-treatment-slide [imgSrc]=slide.img [name]=slide.name (click)="show(slide.name,slide.description,slide.img)"></app-treatment-slide>
+        </div>
+    </swiper>
+</div>
+<p class="swipeText">{{ 'TREATMENTS.swipeText' | translate }}</p>
+<p id="covidText">{{ 'TREATMENTS.covidText' | translate }}</p>
+<a class="appointmentBtn" (click)="scroll('book')">{{ 'TREATMENTS.appointmentText' | translate }}</a>

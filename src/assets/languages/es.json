@@ -1,0 +1,163 @@
+{
+    "NAVBAR": {
+        "home": "Inicio",
+        "treatments": "Tratamientos",
+        "products" : "Productos",
+        "aboutJacky" : "Acerca de Jacky",
+        "reviews" : "Clientes",
+        "bookNow" : "¡Haz tu cita!"
+    },
+    "INTRO": {
+        "introText": "Más que cuidar tu piel, te damos un apapacho.",
+        "bookNow": "¡Haz tu cita!"
+    },
+    "TREATMENTS": {
+        "treatmentsTitle": "Tratamientos personalizados de\n acuerdo a los cuidados de tu piel",
+        "treatmentsSubtitle": "No te cobramos extra.",
+        "buttonFirst": "Cara",
+        "buttonSecond": "Cuerpo",
+        "buttonThird": "Más",
+        "faceTreatments": [
+            {
+                "name": "PEELING QUÍMICO",
+                "description": "Un peeling químico es una técnica que se usa para mejorar la apariencia de la piel del rostro, cuello, manos y cuerpo. Es aplicada a través de una solución química que permite que la piel se exfolie y se vuelva a texturizar al remover las capas externas. Causa un efecto de suavidad en la piel. Esto puede causar sensibilidad a la exposición solar los primeros días.",
+                "img": "../../../../../assets/img/Face/1.png"
+            },{
+                "name": "MICRODERMOABRASIÓN",
+                "description": "A través de una instrumento ligeramente abrasivo exfoliamos tu piel de tal forma que la capa de la superficie de tu piel es removida. Este tipo de rejuvenecimiento beneficia a la piel para disminuir las cicatrices, decoloraciones, manchas de sol y estrías. Así mismo reduce las líneas de expresión y arrugas, cierra los poros abiertos y disminuye las cicatrices causadas por el acné. También te ayuda a fortalecer tu colágeno.",
+                "img": "../../../../../assets/img/Face/2.png"
+            },{
+                "name": "HIDRAFACIAL",
+                "description": "Es un tratamiento no invasivo aplicado en diferentes etapas. Combina los beneficios de la hidrodermoabrasión, peeling químico, extracciones sin dolor automatizadas (sin perforar), así como la nutrición de la piel a través de los antioxidantes, el ácido hialurónico y péptidos. El tratamiento es rápido y sin dejar la piel irritada.",
+                "img": "../../../../../assets/img/Face/3.png"
+            },{
+                "name": "MICRONEEDLING",
+                "description": "El microneedling es un rodillo dermatológico que está compuesto por pequeñas agujas con las que pincha la piel. El objetivo de este tratamiento es generar nuevo colágeno y reducir imperfecciones de la piel para hacerla más suave, firme y tonificada. Usualmente es usada para tratamientos faciales, pero también puede ser usada para reducir cicatrices causadas por el acné, arrugas y poros abiertos.",
+                "img": "../../../../../assets/img/Face/4.png"
+            },{
+                "name": "DERMAPLANING",
+                "description": "A través de una cuchilla dermatológica se remueven las células y vello logrando un efecto de luminosidad en la piel. Este tratamiento puede ser combinado con cualquier facial que elijas.",
+                "img": "../../../../../assets/img/Face/5.png"
+            },{
+                "name": "FACIAL DETOX + MICRODERMOABRASIÓN",
+                "description": "Es un facial que dura entre 45 y 60 minutos en el que se aplican vapor, extracciones y una máscara facial para remover todas las células muertas causadas por la contaminación en el aire.",
+                "img": "../../../../../assets/img/Face/6.png"
+            },{
+                "name": "FACIAL PARA ACNÉ",
+                "description": "Este servicio incluye una terapia a través de una luz azul LED, la cuál matará las bacterias que provocan el acné, produciendo así  limpieza y restauración de la piel. Dependiendo de la condición del acné se recomienda un tratamiento completo de 6 sesiones de 60 minutos por sesión.",
+                "img": "../../../../../assets/img/Face/7.png"
+            },{
+                "name": "HIPERPIGMENTACIÓN",
+                "description": "Es un procedimiento de entre 50 a 60 minutos que aclara las manchas negras capa por capa de la piel. Puede ser aplicado a cualquier tipo de piel.",
+                "img": "../../../../../assets/img/Face/8.png"
+            },{
+                "name": "FACIAL PARA EMBARAZADAS",
+                "description": "Este facial hará que tu piel luzca radiante ya que mejorará la pigmentación de la piel, se reducirán las líneas de expresión y arrugas y se tratará especialmente el acné, melasma y rosácea.",
+                "img": "../../../../../assets/img/Face/9.png"
+            },{
+                "name": "FACIAL 24k DE ORO",
+                "description": "Proporciona nutrientes, fortalece la elasticidad de la piel e hidrata la piel.",
+                "img": "../../../../../assets/img/Face/10.png"
+            },{
+                "name": "FACIAL DE INFUSION SPA",
+                "description": "Es un facial terapeútico con masaje que permite que tu piel se aclare, se suavice, rejuvenezca y se transforme. Limpia poros obstruidos, hidrata la piel reseca, remueve células muertas y tensa la piel mediante un masaje de drenaje linfático.",
+                "img": "../../../../../assets/img/Face/11.png"
+            },{
+                "name": "PARA HOMBRES",
+                "description": "Este trataiento remueve los puntos negros y espinillas producidos por la contaminación. Afeita protuberancias y vello enroscado, así mismo mata las bacterias que se acumulan en los poros. Además de dejar la piel lisa y suave, este tratamiento reduce las manchas de sol.",
+                "img": "../../../../../assets/img/Face/12.png"
+            },{
+                "name": "PEELING PERSONALIZADO",
+                "description": "Si buscas que tu piel se vea joven, más vibrante y firme, entonces agenda tu cita para las sesiones personalizadas de peeling. El peeling ayuda que se renueve y se restaure la superficie de tu piel, ya que elimina la primera capa de tu piel de tal manera que ésta quede lisa.",
+                "img": "../../../../../assets/img/Face/13.png"
+            },{
+                "name": "TRATAMIENTO DE ROSÁCEA",
+                "description": "Reduce la inflamación de  la piel.",
+                "img": "../../../../../assets/img/Face/14.png"
+            },{
+                "name": "ESTIRAMIENTO DE LA PIEL NO QUIRÚRGICO",
+                "description": "Minimiza la apariencia flácida de la piel, reduce las arrugas a través del incremento de colágeno.",
+                "img": "../../../../../assets/img/Face/15.png"
+            }
+        ],
+        "bodyTreatments": [
+            {
+                "name": "FACIAL DE ESPALDA",
+                "description": "Diseñado para tratar acné de espalda e irritación. Este backcial dejará tu piel tan clara como los cielos de verano.",
+                "img": "../../../../../assets/img/Body/1.png"
+            },{
+                "name": "TRATAMIENTO DE EXFOLIACIÓN DE CUERPO",
+                "description": "Estimula la circulación sanguínea y la renovación de células. Remueve células muertas que se encuentran en la superficie de la piel. Hidrata la piel seca y la suaviza. Ayuda a sacar los pelos encarnados y suaviza las protuberancias de la piel.",
+                "img": "../../../../../assets/img/Body/2.png"
+            },{
+                "name": "TRATAMIENTO DE VELA PARA OÍDO",
+                "description": "La vela de oído es un cono hecho de cera cubierto de tela. La punta se coloca en el oído mientras el otro lado está encendido. La succión tibia remueve la cera de tal forma que se mejora el oído. Es un tratamiento para infecciones de sinus y resfriados.",
+                "img": "../../../../../assets/img/Body/3.png"
+            },{
+                "name": "ELECTRÓLISIS",
+                "description": "Es un método aprobado por la FDA que remueve permanentemente el vello. Es perfecto para todas las áreas del cuerpo, incluso las cejas. El paciente no necesita tiempo de recuperación y puede regresar sus actividades diarias inmediatamente después del procedimiento.",
+                "img": "../../../../../assets/img/Body/4.png"
+            }
+        ],
+        "otherTreatments": [
+            {
+                "name": "TINTE DE CEJAS / TINTE DE PESTAÑAS",
+                "description": "Es un servicio para resaltar tus pestañas naturales. Está hecho con un tinte semi permanente que dura de 2 a 3 semanas. Tiempo: 30 min.",
+                "img": "../../../../../assets/img/Other/1.png"
+            },{
+                "name": "MICROBLADING & MAQUILLAJE SEMI PERMANENTE",
+                "description": "A pesar de que el microblading trabaja de forma similar que un tatuaje, no va muy profundo en la piel por lo que no es permanente. Dura de 12 meses a 3 años. El servicio incluye 2 retoques gratis. Puede durar de 18 meses a 10 años. Es aplicado a 0.08 mm de la epidermis. y se aplica anestesia local. Es perfecto para cejas, delineado de ojos y labios.",
+                "img": "../../../../../assets/img/Other/2.png"
+            },{
+                "name": "PLUMA HIALURÓNICA PARA REALZAR LOS LABIOS",
+                "description": "Este tratamiento involucra el ácido hialurónico rellenando los labios sin la necesidad de agujas o inyecciones.",
+                "img": "../../../../../assets/img/Other/3.png"
+            }
+        ],
+        "swipeText": "Desliza para ver todos nuestros servicios",
+        "covidText": "Seguimos todas las regulaciones sanitarias ante el COVID-19.",
+        "appointmentText": "Reservar"
+    },
+    "PRODUCTS": {
+        "productsTitle": "Nuestros productos",
+        "productsText": "Te orientamos en el uso de cremas y productos que usas de acuerdo a tu tipo de piel.",
+        "consultText": "Haz tu consulta"
+    },
+    "ABOUT": {
+        "aboutTitle": "ACERCA DE JACKY",
+        "aboutText": "Jacky es una estilista de grado médico. A lo largo de su carrera profesional se ha dedicado a mejorar la salud de la piel de hombres, mujeres y jóvenes. Nació en La Paz, Bolivia, sin embargo ha vivido en Dallas en los últimos 16 años. Tiene experiencia profesional en diversos tratamientos como microdermoabrasión, tratamientos para el acné, extracciones, peelings, lunares o manchas en la piel, microblading y tratamientos láser.",
+        "aboutQuote": "Me llena de alegría ver a mis clientes satisfechos y realizados con mi servicio." ,
+        "cardTitleFirst": "Estilista Autorizada",
+        "cardTextFirst": "Con más de 30 años de experiencia.",
+        "cardTitleSecond": "Experta en el Cuidado de tu Piel",
+        "cardTextSecond": "Brinda consultas y orientación para diferentes tipos de piel.",
+        "cardTitleThird": "Técnico de Láser con Licencia",
+        "cardTextThird": "Especialista en depilación y fotofaciales.",
+        "aboutButton": "¡Haz tu cita!"
+    },
+    "REVIEWS": {
+        "reviewsTitle": "Reseñas",
+        "reviewsSubtitle": "Nos preocupamos porque nuestros clientes se lleven la mejor experiencia.",
+        "swipeText": "Haz click en las flechas para explorar las reseñas o salta a una reseña con los botones encima."
+    },
+    "SCHEDULER": {
+        "schedulerTitle": "Book Now",
+        "schedulerSubtitle": "Nos entusiasma tenerte en nuestro estudio\npara atenderte y ayudarte. ",
+        "schedulerFormName": "Nombre Completo",
+        "schedulerService": "Escoge tu Tratamiento",
+        "schedulerPhone": "Número celular",
+        "schedulerMail": "Correo electrónico",
+        "schedulerDate": "Fecha preferida",
+        "schedulerHour": "Hora preferida",
+        "schedulerBookBtn": "Reservar",
+        "disclaimer": "Si nos respondemos deja tu mensaje y nos pondremos en contacto contigo tan pronto se pueda."
+    },
+    "FOOTER": {
+        "home": "Inicio",
+        "treatments": "Tratamientos",
+        "products": "Productos",
+        "clients": "Clientes",
+        "aboutJacky" : "Acerca de Jacky",
+        "bookNow": "¡Haz tu cita!"
+    }
+}

@@ -1,0 +1,223 @@
+#bookingWrapper{
+    background-color: #4E6665;
+    height: 350px;
+}
+
+#schedulerTitle{
+    position: relative;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    letter-spacing: 8px;
+    font-size: 40px;
+    margin: 0;
+    text-align: center;
+    padding-top: 40px;
+    padding-left: 34%;
+}
+
+i{
+    margin-right: 10px;
+}
+
+#schedulerSubtitle{
+    position: relative;
+    letter-spacing: 2px;
+    font-size: 14px;
+    margin: 0;
+    text-align: center;
+    padding-left: 34%;
+    white-space: pre-line;
+}
+
+#bookingFormWrapper{
+    position: absolute;
+    display: flex;
+    width: 80%;
+    left: 10%;
+    top: 300px;
+    background-color: white;
+    box-shadow: 16px 16px 25px rgba(0, 0, 0, 0.20);
+    z-index: 12;
+}
+
+#contactInfo{
+    position: relative;
+    display: inline;
+    color: #747474;
+    width: 40%;
+    bottom: 0;
+    left: 15px;
+    height: max-content;
+    margin: 0;
+    margin-top: auto;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+#bookingForm{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    margin-top: 30px;
+}
+
+form input, form select{
+    border: none;
+    background-color: #4E6665;
+    color: white;
+    padding-left: 10px;
+    font-size: 14px;
+}
+
+select{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    background-image:
+    linear-gradient(45deg, transparent 50%, white 50%),
+    linear-gradient(135deg, white 50%, transparent 50%),
+    linear-gradient(to right, #ccc, #ccc);
+  background-position:
+    calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px),
+    calc(100% - 2.5em) 0.5em;
+  background-size:
+    5px 5px,
+    5px 5px,
+    1px 1.5em;
+  background-repeat: no-repeat;
+}
+
+select:-moz-focusring {
+color: transparent;
+text-shadow: 0 0 0 #000;
+}
+
+::placeholder{
+    color: white;
+    opacity: 1;
+}
+
+
+.formFullWidth{
+    width: 80%;
+    margin: 10px 10%;
+    height: 35px;
+}
+
+.formHalfWidth{
+    width: 39%;
+    margin: 10px 1%;
+    height: 35px;
+}
+
+.firstInput{
+    margin-left: 10%;
+}
+
+.lastInput{
+    margin-right: 10%;
+}
+
+#schedulerBookBtn{
+    background-color: #8DC5B5;
+    padding: 8px 40px;
+    font-size: 12px;
+    margin: auto;
+    margin-top: 25px;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+}
+
+#bookingImg{
+    position: absolute;
+    width: 43%;
+    top: 50px;
+    box-shadow: 16px 16px 25px rgba(0, 0, 0, 0.20);
+    max-width: 500px;
+    z-index: 13;
+}
+
+#disclaimerText{
+    position: absolute;
+    bottom: -50px;
+    color: #747474;
+    white-space: pre-line;
+    padding-left: 20px;
+    text-indent: -10px;
+    font-weight: 300;
+    font-size: 10px;
+}
+
+@media only screen and (max-width: 1000px){
+
+    #schedulerTitle{
+        padding-left: 0%;
+        letter-spacing: 1px;
+    }
+
+    #schedulerSubtitle{
+        padding-left: 0;
+    }
+
+    #bookingWrapper{
+        height: 500px;
+    }
+
+    #bookingFormWrapper{
+        flex-direction: column-reverse;
+        position: relative;
+        margin-top: -330px;
+        top: 0;
+    }
+
+    .formHalfWidth{
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 0;
+    }
+
+    #bookingForm{
+        width: 100%;
+    }
+
+    #bookingImg{
+        display: none;
+    }
+
+    i{
+        font-size: 24px;
+        margin-right: 10px;
+    }
+
+    #contactInfo{
+        width: 100%;
+        margin-top: 30px;
+        line-height: 35px;
+        font-size: 12px;
+        white-space: normal;
+    }
+
+    #schedulerBookBtn{
+        width: 80%;
+        text-align: center;
+
+    }
+
+    #disclaimerText{
+        white-space: normal;
+        bottom: -60px;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    #contactInfo{
+        font-size: 10px;
+    }
+}
