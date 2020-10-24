@@ -1,6 +1,7 @@
-<div>
+<div id="signInWrapper" *ngIf="!isSignedIn">
     <h2>Iniciar Sesión</h2>
     <input type="text" #email/>
-    <input type="text" #password/>
+    <input type="password" #password/>
     <button (click)="onSignin(email.value, password.value)">Entrar</button>
 </div>
+<app-admin (isLogout)="handleLogout()" *ngIf="isSignedIn"></app-admin>

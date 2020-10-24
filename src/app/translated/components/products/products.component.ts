@@ -15,9 +15,10 @@ export class ProductsComponent implements OnInit {
   constructor(private productosService: productosService, public translate: TranslateService) { }
 
   ngOnInit(): void {
-    /*this.productosService.getproductos().subscribe(res => {
+    this.productosService.getproductos().subscribe(res => {
       this.productosLista = res;
-    })*/
+      console.log(this.productosLista)
+    })
   }
 
   scroll(id:string) {
