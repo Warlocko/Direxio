@@ -25,7 +25,7 @@ export class SchedulerComponent implements OnInit {
   myFilter
 
   constructor(private translate: TranslateService, private bookingService : BookingsService) {
-    this.maxDate.setDate(this.todayDate.getDate() + 61)
+    this.maxDate.setDate(this.todayDate.getDate() + 365)
     this.dateChosen = true
     this.bookingService.getBookings().subscribe(res => {
       this.bookingsList = res;
