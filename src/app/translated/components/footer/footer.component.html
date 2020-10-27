@@ -1,24 +1,30 @@
 <div id="navigationSection" class="footerSection">
+    <p  style="text-align: left; display: flex; flex-direction:column">
     <a (click)="scroll('intro')">{{ 'FOOTER.home' | translate }}</a>
     <a (click)="scroll('treatments')">{{ 'NAVBAR.treatments' | translate}}</a>
     <a (click)="scroll('products')">{{ 'FOOTER.products' | translate }}</a>
     <a (click)="scroll('aboutJacky')">Jacky</a>
     <a (click)="scroll('reviews')">{{ 'FOOTER.clients' | translate }}</a>
     <a id="footerBookBtn" (click)="scroll('book')">{{ 'FOOTER.bookNow' | translate }}</a>
+    </p>
 </div>
 <div id="logoSection" class="footerSection">
     <img src="../../../../assets/img/logo.png" id="footerLogo">
 </div>
 <div id="navigationSectionMobile" class="footerSection">
-    <a (click)="scroll('intro')">{{ 'FOOTER.home' | translate }}</a>
-    <a (click)="scroll('treatments')">{{ 'NAVBAR.treatments' | translate}}</a>
-    <a (click)="scroll('products')">{{ 'FOOTER.products' | translate }}</a>
-    <a (click)="scroll('aboutJacky')">Jacky</a>
-    <a (click)="scroll('reviews')">{{ 'FOOTER.clients' | translate }}</a>
-    <a id="footerBookBtn" (click)="scroll('book')">{{ 'FOOTER.bookNow' | translate }}</a>
+        <a (click)="scroll('intro')">{{ 'FOOTER.home' | translate }}</a>
+        <a (click)="scroll('treatments')">{{ 'NAVBAR.treatments' | translate}}</a>
+        <a (click)="scroll('products')">{{ 'FOOTER.products' | translate }}</a>
+        <a (click)="scroll('aboutJacky')">Jacky</a>
+        <a (click)="scroll('reviews')">{{ 'FOOTER.clients' | translate }}</a>
+        <a id="footerBookBtn" (click)="scroll('book')">{{ 'FOOTER.bookNow' | translate }}</a>
 </div>
-<div id="   " class="footerSection">
-    <p id="footerContactInfo">
+<div class="footerSection">
+    <div id="footerContactInfo">
+    <p id="footerContactInfoText"><span style="font-weight: 500;">{{ 'FOOTER.hours' | translate}}:</span><br id="showLarge">
+    <span style="font-weight: 500;">{{ 'FOOTER.monFri' | translate}}</span> 10:00am - 7:00pm<br>
+    <span style="font-weight: 500;">{{ 'FOOTER.sat' | translate}}</span> 10:00am - 2:00pm<br>
+    <span style="font-weight: 500;">{{ 'FOOTER.dom' | translate}}</span> {{ 'FOOTER.dom2' | translate}}</p>
     <i class="fas fa-phone-alt"></i>
     <span>214-909-0703</span><br>
     <i class="far fa-envelope"></i> 
@@ -26,5 +32,5 @@
     <i class="fas fa-map-marker-alt" ></i>
     <span>Firewheel Salons 4280 Lavon Drive
     Garland, Tx 75040. Suite #27</span>
-    </p>
+    </div>
 </div>

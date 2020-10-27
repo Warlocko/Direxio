@@ -199,6 +199,11 @@
         "clients": "Reviews",
         "reviews" : "Reviews",
         "aboutJacky" : "About Jacky",
-        "bookNow": "BOOK NOW!"
+        "bookNow": "BOOK NOW!",
+        "hours": "Business Hours",
+        "monFri": "Mon - Fri",
+        "sat": "Sat",
+        "dom": "Sun",
+        "dom2": "closed" 
     }
 }

@@ -69,6 +69,12 @@ i{
     font-size: 12px;
 }
 
+#footerContactInfoText{
+    margin: 0;
+    margin-bottom: 10px;
+    line-height: 18px;
+}
+
 @media only screen and (max-width: 800px){
     .footerSection{
         width: 100%;
@@ -115,5 +121,16 @@ i{
 
     #footerContactInfo span{
         display: block;
+    }
+
+    #showLarge{
+        display: none;
+    }
+
+    #footerContactInfoText{
+        padding-top: 50px;
+        margin-top: 86px;
+        margin-bottom: 30px;
+        line-height: 20px;
     }
 }

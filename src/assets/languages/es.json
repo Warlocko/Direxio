@@ -198,6 +198,11 @@
         "products": "Productos",
         "clients": "Reseñas",
         "aboutJacky" : "Acerca de Jacky",
-        "bookNow": "¡Haz tu cita!"
+        "bookNow": "¡Haz tu cita!",
+        "hours": "Horarios de atención",
+        "monFri": "Lun - Vie",
+        "sat": "Sab",
+        "dom": "Dom",
+        "dom2": "cerrado" 
     }
 }

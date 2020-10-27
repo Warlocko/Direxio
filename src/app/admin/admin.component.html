@@ -33,12 +33,11 @@
                 <option value ="11 am">11 am</option>
                 <option value ="12 pm">12 pm</option>
                 <option value ="1 pm">1 pm</option>
-                <option value ="2 pm">2 pm</option>
+                <option value ="2 pm" >2 pm</option>
                 <option value ="3 pm" *ngIf="dateChosen">3 pm</option>
                 <option value ="4 pm" *ngIf="dateChosen">4 pm</option>
                 <option value ="5 pm" *ngIf="dateChosen">5 pm</option>
                 <option value ="6 pm" *ngIf="dateChosen">6 pm</option>
-                <option value ="7 pm" *ngIf="dateChosen">7 pm</option>
             </select>
             <input type="submit" (click)="addBooking()" value="Apartar" class="addProductBtn" id="addProductFormBtn">
         </form>

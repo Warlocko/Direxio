@@ -23,9 +23,10 @@ export class AppComponent {
       }
     })
      
-    translate.addLangs(['en', 'es'])
-    translate.setDefaultLang('en')
-    setTimeout(()=> {this.translate.use('en')},100)
+    this.translate.addLangs(['en', 'es'])
+    this.translate.setDefaultLang('en')
+    this.translate.getTranslation('en').subscribe(() => {});
+    setTimeout(()=> {this.translate.use('en')},400)
   }
 
   
