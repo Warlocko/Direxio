@@ -16,6 +16,15 @@ swiper{
     color: white;
 }
 
+#swiperCointainer{
+    position: relative !important; 
+    top: -40px !important; 
+    width: 800px !important; 
+    overflow-x: hidden !important; 
+    padding-bottom: 250px !important; 
+    margin-bottom: -250px !important;
+}
+
 #treatmentsTitle{
     font-size: 40px;
     white-space: pre-line;
@@ -50,6 +59,11 @@ swiper{
     margin-right: 30px;
     margin-left: 30px;
     cursor: pointer;
+    transition: 1s;
+}
+
+.treatmentsBtn:hover{
+    background-color: #8DC5B5;
 }
 
 .chosenBtn{
@@ -75,7 +89,8 @@ swiper{
 app-treatment-slide{
     display: block;
     height: 100%;
-    margin-left: 2.5%;
+    width: 70%;
+    margin-left: 15%;
     margin-right: 2.5%;
     cursor: pointer;
 }
@@ -105,6 +120,9 @@ app-treatment-slide{
     margin-left: 30px;
     margin-bottom: 50px;
     white-space: pre-line;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .popupHeader{
@@ -138,7 +156,7 @@ app-treatment-slide{
     letter-spacing: 2px;
 }
 
-.popupImg{
+.popupImg, .popupImgMobile{
     width: 40%;
     max-width: 400px;
     max-height: 350px;
@@ -146,6 +164,10 @@ app-treatment-slide{
     box-shadow: 16px 16px 25px rgba(0, 0, 0, 0.20);
     margin-top: 40px;
     margin-bottom: 40px;
+}
+
+.popupImgMobile{
+    display: none;
 }
 
 .exitBtn{
@@ -174,6 +196,7 @@ app-treatment-slide{
     font-size: 18px;
     font-weight: 500;
     letter-spacing: 1px;
+    padding: 0 40px;
 }
 
 .appointmentBtn{
@@ -185,9 +208,13 @@ app-treatment-slide{
     color: white;
     font-size: 12px;
     letter-spacing: 2px;
-    left: 50%;
-    margin-left: -100px;
     text-align: center;
+    transition: 1s;
+    z-index: 12;
+}
+
+.appointmentBtn:hover{
+    background-color: #8DC5B5;
 }
 
 .chosenSlider{
@@ -200,20 +227,35 @@ app-treatment-slide{
     bottom: 0px;
 }
 
+#swiperContainer{
+    top: -40px;
+}
+
 @media only screen and (max-width: 1000px){
     #treatmentsTitle{
         font-size: 30px;
+        letter-spacing: 1px;
     }
 }
 
 @media only screen and (max-width: 800px){
 
+    #swiperCointainer{
+        width: 100%;
+    }
+
     .popup{
         top: 200px;
         flex-direction: column;
+        padding-bottom: 50px;
     }
 
     .popupImg{
+        display: none;
+    }
+
+    .popupImgMobile{
+       display: block;
        width: auto;
        max-width: 320px;
        height: auto;
@@ -246,13 +288,12 @@ app-treatment-slide{
     }
 
     .chosenSlider{
-        top: 50px;
+        top: 0px;
     }
 
     .appointmentBtn{
         display: block;
         width: 80%;
-        left: 10%;
         margin: 0;
         text-align: center;
     }
@@ -263,6 +304,14 @@ app-treatment-slide{
         font-size: 6vw;
         text-align: center;
         white-space: pre-line;
+    }
+
+    .swipeText{
+        margin-top: 0;
+    }
+
+    #swiperContainer{
+        top: -40px;
     }
 
     #treatmentsSubtitle{

@@ -7,13 +7,6 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['./treatments.component.scss']
 })
 export class TreatmentsComponent implements OnInit {
-  treatmentsTitle:string = "Personalized treatments\n according to your needs"
-  treatmentsSubtitle:string = "We don't charge you for extra things"
-  buttonFirst:string = "Face"
-  buttonSecond:string = "Body"
-  buttonThird:string = "More"
-  swipeText:string = "Swipe to see all our treatments"
-  covidText:string = "We have all Covid-19 Precautions"
   faceTreatments ;
   bodyTreatments ;
   otherTreatments ;
@@ -27,10 +20,6 @@ export class TreatmentsComponent implements OnInit {
         this.faceTreatments = res.faceTreatments
         this.bodyTreatments = res.bodyTreatments
         this.otherTreatments = res.otherTreatments
-
-      console.log(this.faceTreatments)
-      console.log(this.bodyTreatments)
-      console.log(this.otherTreatments)
     })
   }
 
@@ -38,13 +27,15 @@ export class TreatmentsComponent implements OnInit {
     direction: 'horizontal',
     slidesPerView: 1,
     slideToClickedSlide: false,
+    initialSlide: 0,
     mousewheel: false,
+    setWrapperSize: true,
     scrollbar: false,
     watchSlidesProgress: true,
     navigation: true,
     keyboard: true,
-    centeredSlides: true,
-    loop: true,
+    centeredSlides: false,
+    loop: false,
     roundLengths: true,
     slidesOffsetBefore: 0,
     slidesOffsetAfter: 0,

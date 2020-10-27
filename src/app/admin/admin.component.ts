@@ -17,6 +17,14 @@ export class AdminComponent implements OnInit {
     price: 0,
     image: ""
   }
+  booked = {
+    Nombre: "Horario Apartado",
+    Email: "-",
+    Telefono: "-",
+    Tratamiento: "-",
+    Fecha: "",
+    Hora: ""
+  }
 
   @Output() isLogout = new EventEmitter<void>()
   constructor(public firebaseService : FirebaseService, private booking : BookingsService, private productosService : productosService) { 
@@ -28,9 +36,24 @@ export class AdminComponent implements OnInit {
       this.productosList = res
     })
     this.booking.getBookings().subscribe(res => {
-      this.bookingsList = res;
-      console.log(this.bookingsList)
+      this.bookingsList = res.sort(this.compareDate);
     })
+  }
+
+  compareDate( a, b ) {
+    if ( a.Fecha < b.Fecha ){
+      return -1;
+    }
+    if ( a.Fecha > b.Fecha){
+      return 1;
+    }
+    if( a.Hora < b.Hora){
+      return -1;
+    }
+    if(a.Hora > b.Hora){
+      return 1;
+    }
+    return 0;
   }
 
   logout(){
@@ -42,6 +65,17 @@ export class AdminComponent implements OnInit {
     var form = document.getElementById('productForm');
 
     form.classList.toggle("productFormActive")
+  }
+
+  addBooking(){
+    if (this.bookingsList.some(e => e.Fecha === this.booked.Fecha) && this.bookingsList.some(e => e.Hora === this.booked.Hora)) {
+      alert('Ese espacio ya está apartado.\n Favor de seleccionar otro.')
+    }else if(this.booked.Fecha=="" || this.booked.Hora==""){
+      alert('Por favor llena fecha y hora para apartar.')
+    }else{
+      this.booking.addBooking(this.booked);
+      alert('Hora Apartada con éxito.')
+    }
   }
 
   addProduct(){

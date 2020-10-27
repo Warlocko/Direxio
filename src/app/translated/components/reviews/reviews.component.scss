@@ -14,6 +14,7 @@
     font-weight: 500;
     letter-spacing: 1px;
     margin-bottom: 50px;
+    text-align: center;
 }
 
 #reviewsWrapper{
@@ -45,6 +46,7 @@
     margin-bottom: 10px;
     white-space: pre-line;
     overflow: hidden;
+    transition: opacity 1s;
 }
 
 .currentReview{
@@ -54,6 +56,11 @@
     left: 15%;
     z-index: 100;
     opacity: 1;
+}
+
+.transitionReview p{
+    opacity: 0 !important;
+    transition: 0s;
 }
 
 .w3-button:hover{
@@ -77,6 +84,7 @@
 .previousReview p{
     font-size: 5px;
     margin-bottom: 5px;
+    opacity: 1;
 }
 
 .nextReview{
@@ -95,6 +103,7 @@
 .nextReview p{
     font-size: 5px;
     margin-bottom: 5px;
+    opacity: 1;
 }
 
 #reviewsSliderControls{
@@ -132,6 +141,7 @@
 @media only screen and (max-width: 800px){
     #reviewsTitle{
         margin-top: 0;
+        letter-spacing: 0;
     }
 
     #reviewsSubtitle{
@@ -160,6 +170,14 @@
         display: none;
     }
 
+    .swipeText{
+        padding: 0 20px;
+    }
+
+    #petal21{
+        top: 150px;
+        left: 10px;
+    }
 
 }
       

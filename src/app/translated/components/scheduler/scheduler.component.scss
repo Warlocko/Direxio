@@ -54,10 +54,12 @@ option{
     height: max-content;
     margin: 0;
     margin-top: auto;
-    margin-bottom: 10px;
-    letter-spacing: 1px;
+    margin-bottom: 20px;
+    letter-spacing: 1.8px;
     font-weight: 300;
-    line-height: 30px;
+    line-height: 25px;
+    font-size: 13px;
+    margin-left: 10px;
 }
 
 .asteriskDiv{
@@ -69,14 +71,14 @@ option{
 .asteriskDiv p{
     position: absolute;
     left: -10px;
-    color: black;
+    color: #4E6665;
     top: -8px;
 }
 
 .asteriskDivHalf p{
     position: absolute;
     left: -10px;
-    color: black;
+    color: #4E6665;
     top: -8px;
 }
 
@@ -99,13 +101,37 @@ option{
     margin-top: 30px;
 }
 
+#dateBlock{
+    width: 30px;
+    margin-top: 10px;
+    height: 35px;
+    background-color: #4E6665;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
 form input, form select{
     border: none;
     background-color: #4E6665;
     color: white;
     padding-left: 10px;
-    font-size: 14px;
+    font-size: 13px;
+    font-family: 'Poppins', sans-serif !important;
 }
+
+form input[type=submit]{
+    padding-left: 0;
+}
+
+option{
+    font-family: 'Poppins', sans-serif !important;
+}
+
+@-moz-document url-prefix() {
+    form input[type=text] {padding-left:15px !important;}
+}
+
 
 select{
     -webkit-box-sizing: border-box;
@@ -119,14 +145,22 @@ select{
     linear-gradient(135deg, white 50%, transparent 50%),
     linear-gradient(to right, #ccc, #ccc);
   background-position:
-    calc(100% - 20px) calc(1em + 2px),
     calc(100% - 15px) calc(1em + 2px),
-    calc(100% - 2.5em) 0.5em;
+    calc(100% - 10px) calc(1em + 2px),
+    calc(100% - 2.3em) 0.5em;
   background-size:
-    5px 5px,
-    5px 5px,
+    5px 6px,
+    5px 6px,
     1px 1.5em;
   background-repeat: no-repeat;
+}
+
+form select:hover{
+    background-color: #8DC5B5;
+}
+
+form select option:checked{
+    background-color: #4E6665;
 }
 
 select:-moz-focusring {
@@ -163,14 +197,19 @@ text-shadow: 0 0 0 #000;
 }
 
 #schedulerBookBtn{
-    background-color: #8DC5B5;
+    background-color: #4E6665;
     padding: 8px 40px;
     font-size: 12px;
     margin: auto;
     margin-top: 25px;
     letter-spacing: 2px;
     margin-bottom: 25px;
+    transition: 1s;
     cursor: pointer;
+}
+
+#schedulerBookBtn:hover{
+    background-color: #8DC5B5;
 }
 
 #bookingImg{
@@ -246,6 +285,7 @@ text-shadow: 0 0 0 #000;
         margin-top: 30px;
         line-height: 35px;
         font-size: 12px;
+        letter-spacing: 1.8px;
         white-space: normal;
     }
 
@@ -259,10 +299,28 @@ text-shadow: 0 0 0 #000;
         white-space: normal;
         bottom: -60px;
     }
+
+
+}
+
+@media only screen and (max-width: 800px){
+    #petal22{
+        right: 0;
+        bottom: 50px;
+        transform: rotate(-15deg);
+    }
+
+    #contactInfo{
+        letter-spacing: 0;
+    }
 }
 
 @media only screen and (max-width: 400px){
     #contactInfo{
         font-size: 10px;
+    }
+
+    #petal22{
+        display: none;
     }
 }

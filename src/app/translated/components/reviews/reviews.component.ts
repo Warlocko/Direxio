@@ -26,10 +26,6 @@ export class ReviewsComponent implements OnInit {
   @ViewChildren('carouselButton')
   private carouselButtons : QueryList<ElementRef>;
 
-  reviewsTitle:string = "Reviews"
-  reviewsSubtitle:string = "We care about our clients and their experience."
-  reviewText:string = "Jacky is very knowledgeable about her profession, products used and always takes her time to make sure what first my skin type. She always gives me quality service, makes sure I understand what my service includes, the benefits of the Facial given and the care I need to follow up with. Her spa is very cozy, clean and quiet... makes me feel like a special client every time! \n So glad I found her for my skin needs"
-  swipeText:string = "Swipe to see all our reviews."
 
   constructor(public translate: TranslateService) { }
 
@@ -73,7 +69,6 @@ public slide(direction: Direction): void {
 
     let nextReviewIndex;
 
-    console.log(this.currentReviewIndex)
     if (direction === Direction.Right) {
       currentReview = carouselNativeElements[currentRightReviewIndex];
       previousReview = carouselNativeElements[this.currentReviewIndex];
@@ -102,8 +97,13 @@ public slide(direction: Direction): void {
     previousReview.classList.add('previousReview')
     currentReview.classList.add('currentReview')
     nextReview.classList.add('nextReview')
+    previousReview.classList.add('transitionReview')
+    currentReview.classList.add('transitionReview')
+    nextReview.classList.add('transitionReview')
 
-
+    setTimeout(() => {previousReview.classList.remove('transitionReview')},200)
+    setTimeout(() => {currentReview.classList.remove('transitionReview')},200)
+    setTimeout(() => {nextReview.classList.remove('transitionReview')},200)
 
     this.t1.to([], {}).eventCallback('onComplete', () => {
       this.currentReviewIndex = nextReviewIndex;
@@ -129,6 +129,14 @@ public selectReview(index: number): void {
   previousReview.classList.add('previousReview')
   currentReview.classList.add('currentReview')
   nextReview.classList.add('nextReview')  
+
+  previousReview.classList.add('transitionReview')
+  currentReview.classList.add('transitionReview')
+  nextReview.classList.add('transitionReview')
+
+  setTimeout(() => {previousReview.classList.remove('transitionReview')},200)
+  setTimeout(() => {currentReview.classList.remove('transitionReview')},200)
+  setTimeout(() => {nextReview.classList.remove('transitionReview')},200)
 
   const reviewButtons = this.getCarouselButtons();
     

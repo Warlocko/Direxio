@@ -1,8 +1,10 @@
+
+
 #navbarBackground{
     position: fixed;
     display: flex;
     align-items: center;
-    height: 75px;
+    height: 80px;
     width: 100%;
     left: 0;
     top: 0;
@@ -24,6 +26,11 @@
     border: none;
     padding: 0;
     z-index: 99999;
+    transition: 1s;
+}
+
+#returnBtn:hover{
+    background-color: #8DC5B5;
 }
 
 #mobileBookNow{
@@ -37,6 +44,7 @@
 #navbarLogo{
     height: 100%;
     margin-left: 5%;
+    padding: 5px;
 }
 
 #navbarLinks{
@@ -59,24 +67,30 @@
 .bookBtn{
     padding: 5px 20px;
     background-color: #4E6665;
+    transition: 1s;
+    letter-spacing: 5px !important;
+}
+
+.bookBtn:hover{
+    background-color: #8DC5B5;
 }
 
 .langBtn{
     position: absolute;
-    top: 80px;
-    width: 40px;
+    top: 85px;
+    width: 55px;
     background-color: transparent;
     color: #8DC5B5;
-    padding-top: 3px;
-    padding-bottom: 3px;
-    font-size: 12px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    font-size: 14px;
     border: none;
-    font-weight: 700;
+    font-weight: 500;
     z-index: 100;
 }
 
 #esBtn{
-    right: 140px;
+    right: 160px;
 }
 
 #enBtn{
@@ -91,14 +105,17 @@
 app-intro-section{
     position: relative;
     display: flex;
-    height: 550px;
+    height: 99vh;
     width: 100%;
     background-color: #fbf9f7;
 }
 
 app-treatments{
     position: relative;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: #fbf9f7;
     padding-bottom: 30px;
 }
@@ -158,6 +175,14 @@ app-footer{
         flex-direction: column;
         height: auto;
         padding-bottom: 30px;
+    }
+
+    #navbarLinks a{
+        margin-left: 15px;
+    }
+
+    .bookBtn{
+        letter-spacing: 1px !important;
     }
 }
 
@@ -237,7 +262,7 @@ app-footer{
     }
 
     #esBtn{
-        right: 60px;
+        right: 80px;
     }
 
     app-scheduler{

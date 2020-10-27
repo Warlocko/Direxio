@@ -2,17 +2,23 @@
 body{
     margin: 0;
     font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+    width: 100%;
 }
 
 a, button{
     cursor: pointer;
 }
 
-.petal{
+.petal, .petalMobile{
     position: fixed;
     width: 150px;
     height: 150px;
     z-index: 11;
+}
+
+.petalMobile{
+    display: none;
 }
 
 .petalImg{
@@ -21,33 +27,34 @@ a, button{
 }
 
 #petal1{
-    top: 400px;
+    top: 80vh;
 }
 
 #petal2{
     right: 10px;
-    top: 80px;
+    top: 15vh;
 }
 
 #petal3{
-    right: 70px;
-    top: 490px;
+    right: 20px;
+    top: 90vh;
     z-index: 8;
 }
 
 #petal4{
-    top: 650px;
-    left: 10px;
+    top: 100vh;
+    left: 40px;
     z-index: 8;
 }
 
 #petal5{
-    top: 1000px;
+    top: 150vh;
 }
 
 #petal6{
     top: 1000px;
-    right: 50px;
+    right: 20px;
+    z-index: 10;
 }
 
 #petal7{
@@ -71,7 +78,7 @@ a, button{
 
 #petal11{
     top: 2450px;
-    right: 10px;
+    right: 0px;
     width: 250px;
     height: 250px;
     transform: rotate(340deg);
@@ -81,4 +88,29 @@ a, button{
     .petal{
         display: none;
     }
+
+    .petalMobile{
+        display: block;
+        position: absolute;
+    }
+
+    #petal12{
+        top: 25vw;
+        transform: rotate(90deg);
+    }
+
+    #petal13{
+        top: 93vw;
+        right: 10px;
+        z-index: 7;
+    }
+
+    #petal14{
+        top: 97vw;
+    }
+
+    #petal15{
+        top: 230vh;
+    }
+    
 }

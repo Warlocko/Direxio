@@ -36,6 +36,14 @@ p{
     bottom: 0;
 }
 
+.pawImg{
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    right: -100%;
+    z-index: -1;
+}
+
 @media only screen and  (max-width: 800px){
 
     .bodyText{
