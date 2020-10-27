@@ -160,6 +160,17 @@ input, select{
     color: black;
 }
 
+input:disabled{
+    opacity: 1;
+}
+
+.mat-datepicker-toggle{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 13px;
+}
+
 input::placeholder{
     color: #747474;
 }

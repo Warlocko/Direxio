@@ -20,20 +20,22 @@
             </select></div>
             <div class="asteriskDivHalf firstInput"><p>*</p><input [(ngModel)]="booking.Telefono" name="Telefono" type="text" id="phoneField" name="phoneNumber" class="formHalfWidth " placeholder="{{ 'SCHEDULER.schedulerPhone' | translate }}"></div>
             <div class="asteriskDivHalf lastInput"><p>*</p><input [(ngModel)]="booking.Email" name="Email" type="text" id="emailField" name="eMail" class="formHalfWidth " placeholder="{{ 'SCHEDULER.schedulerMail' | translate }}"></div>
-            <div class="asteriskDivHalf firstInput"><p>*</p><input class="formHalfWidth" [(ngModel)]="booking.Fecha" type="date" id="start" name="start"
-           value="10-24-2020"
-           min="2020-10-24" max="2022-12-31" format="MM/DD/YYYY"><div id="dateBlock"></div>
+            <div class="asteriskDivHalf firstInput"><p>*</p><input  [min]="todayDate" [max]="maxDate" [(ngModel)]="booking.Fecha" disabled [ngModelOptions]="{standalone: true}" name="Fecha" class="formHalfWidth" matInput [matDatepickerFilter]="myFilter" [matDatepicker]="picker" placeholder="{{ 'SCHEDULER.schedulerDate' | translate }}" (dateChange)="checkHour($event)">
+                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker disabled="false"></mat-datepicker>
             </div>
             <div class="asteriskDivHalf lastInput"><p>*</p><select [(ngModel)]="booking.Hora" name="Hora" id = "myList" class="formHalfWidth ">
                 <option value="" selected disabled>{{'SCHEDULER.schedulerHour' | translate }}</option>
-                <option value ="10:00">10 am</option>
-                <option value ="11:00">11 am</option>
-                <option value ="12:00">12 pm</option>
-                <option value ="13:00">1 pm</option>
-                <option value ="14:00">2 pm</option>
-                <option value ="15:00">3 pm</option>
-                <option value ="16:00">4 pm</option>
-                <option value ="17:00">5 pm</option>
+                <option value ="10 am">10 am</option>
+                <option value ="11 am">11 am</option>
+                <option value ="12 pm">12 pm</option>
+                <option value ="1 pm">1 pm</option>
+                <option value ="2 pm">2 pm</option>
+                <option value ="3 pm" *ngIf="dateChosen">3 pm</option>
+                <option value ="4 pm" *ngIf="dateChosen">4 pm</option>
+                <option value ="5 pm" *ngIf="dateChosen">5 pm</option>
+                <option value ="6 pm" *ngIf="dateChosen">6 pm</option>
+                <option value ="7 pm" *ngIf="dateChosen">7 pm</option>
             </select></div>
             <input type="submit" value="{{ 'SCHEDULER.schedulerBookBtn' | translate }}" id="schedulerBookBtn" (click)="submit()">
         </form>

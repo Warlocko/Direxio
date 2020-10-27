@@ -1,3 +1,38 @@
+
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@import '~@angular/material/theming';
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat-core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$Direxio-primary: mat-palette($mat-indigo);
+$Direxio-accent: mat-palette($mat-pink, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$Direxio-warn: mat-palette($mat-red);
+
+// Create the theme object. A theme consists of configurations for individual
+// theming systems such as "color" or "typography".
+$Direxio-theme: mat-light-theme((
+  color: (
+    primary: $Direxio-primary,
+    accent: $Direxio-accent,
+    warn: $Direxio-warn,
+  )
+));
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include angular-material-theme($Direxio-theme);
+
 /* You can add global styles to this file, and also import other style files */
 body{
     margin: 0;
@@ -52,7 +87,7 @@ a, button{
 }
 
 #petal6{
-    top: 1000px;
+    top: 120vh;
     right: 20px;
     z-index: 10;
 }
@@ -62,7 +97,7 @@ a, button{
 }
 
 #petal8{
-    top: 1800px;
+    top: 180vh;
     right: 70px;
     z-index: 7;
 }
@@ -82,6 +117,19 @@ a, button{
     width: 250px;
     height: 250px;
     transform: rotate(340deg);
+}
+
+.mat-datepicker-content{
+    background-color: #8DC5B5 !important;
+    color: white;
+}
+
+.mat-calendar-body-cell-content, .mat-calendar-body-label{
+    color: white;
+}
+
+.mat-calendar-body-cell:not(.mat-calendar-body-disabled):hover > .mat-calendar-body-cell-content:not(.mat-calendar-body-selected):not(.mat-calendar-body-comparison-identical), .cdk-keyboard-focused .mat-calendar-body-active > .mat-calendar-body-cell-content:not(.mat-calendar-body-selected):not(.mat-calendar-body-comparison-identical), .cdk-program-focused .mat-calendar-body-active > .mat-calendar-body-cell-content:not(.mat-calendar-body-selected):not(.mat-calendar-body-comparison-identical), .mat-calendar-body-selected{
+    background-color: #4E6665 ;
 }
 
 @media only screen and (max-width: 800px){

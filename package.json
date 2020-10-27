@@ -29,6 +29,7 @@
     "firebase": "^7.24.0",
     "gsap": "^3.5.1",
     "jquery": "^3.5.1",
+    "moment": "^2.29.1",
     "ngx-swiper-wrapper": "^10.0.0",
     "ngx-useful-swiper": "^10.0.1",
     "rxjs": "~6.5.5",

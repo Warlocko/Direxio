@@ -15,6 +15,14 @@
     padding-left: 34%;
 }
 
+.mat-datepicker-toggle{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 7px;
+    color: white;
+}
+
 i{
     margin-right: 10px;
 }
@@ -126,6 +134,11 @@ form input[type=submit]{
 
 option{
     font-family: 'Poppins', sans-serif !important;
+}
+
+input:disabled{
+    background-color: #4E6665 ;
+    opacity: 1;
 }
 
 @-moz-document url-prefix() {

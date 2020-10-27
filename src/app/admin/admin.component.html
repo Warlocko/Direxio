@@ -24,20 +24,21 @@
         </div>
         <button class="addProductBtn" (click)="showProductForm()">Apartar horario</button>
         <form id="productForm">
-            <input [(ngModel)]=booked.Fecha type="date" name="Fecha" placeholder="Fecha a apartar"
-            min="2020-10-24" max="2021-04-31" format="DD/MM/YYYY" required/>
+            <div style="position: relative; width: 80%; left: 10%;"><input style="width: 100%; left: 0;" [(ngModel)]="booked.Fecha" disabled [ngModelOptions]="{standalone: true}" name="Fecha" class="formHalfWidth" matInput [matDatepickerFilter]="myFilter" [matDatepicker]="picker" placeholder="Selecciona una Fecha" (dateChange)="checkHour($event)">
+                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker disabled="false"></mat-datepicker></div>
             <select name="hora" [(ngModel)]=booked.Hora>
                 <option value="" selected disabled>Selecciona una hora</option>
-                <option value ="10:00">10:00</option>
-                <option value ="11:00">11:00</option>
-                <option value ="12:00">12:00</option>
-                <option value ="13:00">13:00</option>
-                <option value ="14:00">14:00</option>
-                <option value ="15:00">15:00</option>
-                <option value ="16:00">16:00</option>
-                <option value ="17:00">17:00</option>
-                <option value ="18:00">18:00</option>
-                <option value ="19:00">19:00</option>
+                <option value ="10 am">10 am</option>
+                <option value ="11 am">11 am</option>
+                <option value ="12 pm">12 pm</option>
+                <option value ="1 pm">1 pm</option>
+                <option value ="2 pm">2 pm</option>
+                <option value ="3 pm" *ngIf="dateChosen">3 pm</option>
+                <option value ="4 pm" *ngIf="dateChosen">4 pm</option>
+                <option value ="5 pm" *ngIf="dateChosen">5 pm</option>
+                <option value ="6 pm" *ngIf="dateChosen">6 pm</option>
+                <option value ="7 pm" *ngIf="dateChosen">7 pm</option>
             </select>
             <input type="submit" (click)="addBooking()" value="Apartar" class="addProductBtn" id="addProductFormBtn">
         </form>

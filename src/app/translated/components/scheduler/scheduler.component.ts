@@ -1,5 +1,6 @@
 import { Component, OnInit, Directive, Input, ElementRef, HostListener } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
+import * as moment from 'moment';
 import { BookingsService } from 'src/app/services/bookings.service';
 
 @Component({
@@ -18,11 +19,22 @@ export class SchedulerComponent implements OnInit {
     Fecha: "",
     Hora: ""
   };
+  dateChosen;
+  todayDate = new Date()
+  maxDate = new Date()
+  myFilter
 
-  constructor(private translate: TranslateService, private bookingService : BookingsService) { 
+  constructor(private translate: TranslateService, private bookingService : BookingsService) {
+    this.maxDate.setDate(this.todayDate.getDate() + 61)
+    this.dateChosen = true
     this.bookingService.getBookings().subscribe(res => {
       this.bookingsList = res;
     })
+    this.myFilter = (d: Date): boolean => {
+      const day = d.getDay();
+      // Prevent Saturday and Sunday from being selected.
+      return day !== 0;
+    }
     this.translate.stream('SCHEDULER').subscribe(res => {
       if(this.translate.currentLang=='en'){
         this.schedulerTreatments = [
@@ -82,12 +94,19 @@ export class SchedulerComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  checkHour(event){
+    var dateChanged = event.value;
+    this.dateChosen = dateChanged.getDay() !== 6
+  }
+
   submit(){
+    console.log(this.booking)
     if (this.bookingsList.some(e => e.Fecha === this.booking.Fecha) && this.bookingsList.some(e => e.Hora === this.booking.Hora)) {
       alert('Ese espacio ya está apartado.\n Favor de seleccionar otro.')
     }else if(this.booking.Nombre=="" || this.booking.Tratamiento=="" || this.booking.Email=="" || this.booking.Telefono=="" || this.booking.Fecha=="" || this.booking.Hora==""){
       alert('Por favor llene todos los campos para agendar su cita.')
     }else{
+      this.booking.Fecha = moment(this.booking.Fecha).format('MM/DD/YYYY')
       this.bookingService.addBooking(this.booking);
       alert('Su cita ha sido agendada con éxito.')
     }

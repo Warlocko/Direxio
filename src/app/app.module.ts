@@ -26,8 +26,12 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { HomeComponent } from './translated/components/home/home.component';
 import { AdminComponent } from './admin/admin.component';
 import { AdminSignupComponent } from './admin-signup/admin-signup.component';
+
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations'
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input'
+import { MatNativeDateModule } from '@angular/material/core';
 
 const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
   direction: 'horizontal',
@@ -60,11 +64,14 @@ export function HttpLoaderFactory(http: HttpClient){
     AppRoutingModule,
     MatDatepickerModule,
     FormsModule,
+    MatFormFieldModule,
+    MatNativeDateModule,
     [IvyCarouselModule],
     SwiperModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFirestoreModule,
     HttpClientModule,
+    MatInputModule,
     TranslateModule.forRoot({
         loader: {
           provide: TranslateLoader,
@@ -79,7 +86,8 @@ export function HttpLoaderFactory(http: HttpClient){
     {
       provide: SWIPER_CONFIG,
       useValue: DEFAULT_SWIPER_CONFIG
-    }
+    },
+    MatDatepickerModule,
   ],
   bootstrap: [AppComponent],
   exports: [TranslateModule]
