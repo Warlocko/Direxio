@@ -1,6 +1,7 @@
 $dark-green: #4E6665;
 
 #productsTitle{
+    position: relative;
     text-align: center;
     font-family: 'Playfair Display', serif;
     font-weight: 700;
@@ -8,6 +9,7 @@ $dark-green: #4E6665;
     letter-spacing: 8px;
     font-size: 40px;
     color: $dark-green;
+    z-index: 12;
 }
 
 #productsWrapper{
@@ -49,6 +51,11 @@ app-single-product{
     letter-spacing: 2px;
     text-transform: uppercase;
     text-align: center;
+    transition: 1s;
+}
+
+#consultBtn:hover{
+    background-color: #8DC5B5;
 }
 
 @media only screen and  (max-width: 800px){

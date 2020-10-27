@@ -23,24 +23,24 @@
                 "description": "A chemical peel is a technique used to improve the appearance of the face, neck, hands and body skin. A chemical solution is applied that causes the exfoliation and re-texturization of your skin by removing the outer layers. The new and regenerated skin is usually smoother and less wrinkled than the old one. The first days it can cause sensitiveness at the sun exposure.",
                 "img": "../../../../../assets/img/Face/1.png"
             },{
-                "name": "Microdermoabrassion",
+                "name": "Micro-dermoabrassion",
                 "description": "Microdermabrasion uses a minimally abrasive instrument to gently sand your skin, removing the thicker and uneven outer layer.\n This type of skin rejuvenation is used to treat light scarring, discoloration, sun damage and stretch marks. Reduce fine lines and wrinkles, reduce or eliminate enlarged pores, treat acne and the scars left by acne and help thicken your collagen with a microdermasion treatment just for you.",
                 "img": "../../../../../assets/img/Face/2.png"
             },{
                 "name": "Hydra Facial",
-                "description": "Es un tratamiento no invasivo aplicado en diferentes etapas. Combina los beneficios de la hidrodermoabrasión, peeling químico, extracciones sin dolor automatizadas (sin perforar), así como la nutrición de la piel a través de los antioxidantes, el ácido hialurónico y péptidos. El tratamiento es rápido y sin dejar la piel irritada.",
+                "description": "Is a non-invasive multi-step treatment that combines the benefits of next-level hydradermabrasion, a chemical peel, automated painless extractions (no pinching) and a special delivery of antioxidants, hyaluronic acid and peptides. It does all of this in one quick treatment that delivers real results without downtime or irritation.",
                 "img": "../../../../../assets/img/Face/3.png"
             },{
                 "name": "Microneedling",
-                "description": "El microneedling es un rodillo dermatológico que está compuesto por pequeñas agujas con las que pincha la piel. El objetivo de este tratamiento es generar nuevo colágeno y reducir imperfecciones de la piel para hacerla más suave, firme y tonificada. Usualmente es usada para tratamientos faciales, pero también puede ser usada para reducir cicatrices causadas por el acné, arrugas y poros abiertos.",
+                "description": "Microneedling is a dermaroller procedure that uses small needles to prick the skin. The purpose of treatment is to generate new collagen and skin tissue for smoother, strengthen, more toned skin. Microneedling is mostly used on the face and may treat various acne scars, wrinkles, and large pores.",
                 "img": "../../../../../assets/img/Face/4.png"
             },{
                 "name": "Dermaplaning",
-                "description": "A través de una cuchilla dermatológica se remueven las células y vello logrando un efecto de luminosidad en la piel. Este tratamiento puede ser combinado con cualquier facial que elijas.",
+                "description": "A derma blade removes dead cells and fassy hair of the skin revealing a bright complexion. This treatment can be combined with your choice of facial.",
                 "img": "../../../../../assets/img/Face/5.png"
             },{
-                "name": "Detox Facial + Dermoabrassion",
-                "description": "Es un facial que dura entre 45 y 60 minutos en el que se aplican vapor, extracciones y una máscara facial para remover todas las células muertas causadas por la contaminación en el aire.",
+                "name": "Detox Facial + Micro-dermoabrassion",
+                "description": "Between 45-60 minutes facial cleans your skin removing all dead cells caused by pollution and smoke. It is applied by steam, extractions and mask.",
                 "img": "../../../../../assets/img/Face/6.png"
             },{
                 "name": "Acne Facial",
@@ -67,10 +67,6 @@
                 "description": "This treatment removes blackheads produced by the pollution. It shaves bumps and in-grown hair, also it kills bacteria that cause them. This treatment leaves the skin soft and smooth while cleaning the sun spots.",
                 "img": "../../../../../assets/img/Face/12.png"
             },{
-                "name": "Customized Peel",
-                "description": "If you want your skin to look younger, more vibrant, and tighter, then you should come for one of our customized peel sessions. A peel will help restore and renew the surface of your skin by shedding a few layers of your skin evenly.",
-                "img": "../../../../../assets/img/Face/13.png"
-            },{
                 "name": "Rosacea Treatment",
                 "description": "Reduce the skin inflammation.",
                 "img": "../../../../../assets/img/Face/14.png"
@@ -78,6 +74,10 @@
                 "name": "Nonsurgical Skin Tightening",
                 "description": "Minimize the appearance of loose skin, wrinkles by prompting collagen.",
                 "img": "../../../../../assets/img/Face/15.png"
+            },{
+                "name": "Customized Peel",
+                "description": "If you want your skin to look younger, more vibrant, and tighter, then you should come for one of our customized peel sessions. A peel will help restore and renew the surface of your skin by shedding a few layers of your skin evenly.",
+                "img": "../../../../../assets/img/Face/13.png"
             }
         ],
         "bodyTreatments": [
@@ -109,7 +109,7 @@
                 "description": "It isn't permanent. Although microblading works in a similar way to a regular tattoo inking, it doesn't go anywhere near as deep into the skin. It can last between 12 months and three years. And it includes 2 free retouch ups. It can lasts anywhere between 18 months to 10 years .Works in 0.08 millimeters from the epidermis. Local anaesthetic. Perfect for eyebrows, eye liners and lips.",
                 "img": "../../../../../assets/img/Other/2.png"
             },{
-                "name": "HYALURON PEN FOR PLUMP YOUR LIPS",
+                "name": "HYALURON PEN TO PLUMP YOUR LIPS",
                 "description": "This treatment involves an hyaluronic acid filler without the use of needles or injections.",
                 "img": "../../../../../assets/img/Other/3.png"
             }
@@ -120,6 +120,46 @@
     },
     "PRODUCTS": {
         "productsTitle": "Our Products",
+        "name1": "Day Cream 4oz",
+        "description1": "For normal and dry skin (custom formulas)",
+        "price1": "35",
+        "img1": "https://firebasestorage.googleapis.com/v0/b/infusionspa-52831.appspot.com/o/Day%20Cream.png?alt=media&token=b3f09c07-b127-4680-8bdf-045e1d72ee7b",
+
+        "name2": "Night Cream 4oz",
+        "description2": "For normal and dry skin (custom formulas)",
+        "price2": "40",
+        "img2": "https://firebasestorage.googleapis.com/v0/b/infusionspa-52831.appspot.com/o/Night%20Cream.png?alt=media&token=283d14c1-e867-4eae-a506-a24ae5ff0e8b",
+
+        "name3": "Day & Night Cream ",
+        "description3": "For oily skin formula",
+        "price3": "45",
+        "img3": "https://firebasestorage.googleapis.com/v0/b/infusionspa-52831.appspot.com/o/Day%20_%20Night.png?alt=media&token=fedf6a91-d7a7-42f6-8a3c-2a6a522ad031",
+
+        "name4": "Eye Cream",
+        "description4": "",
+        "price4": "35",
+        "img4": "https://firebasestorage.googleapis.com/v0/b/infusionspa-52831.appspot.com/o/Eye%20Cream.png?alt=media&token=36c0a24c-9992-40a8-966f-61624a370853",
+
+        "name5": "Hialuronic Acid",
+        "description5": "",
+        "price5": "65",
+        "img5": "https://firebasestorage.googleapis.com/v0/b/infusionspa-52831.appspot.com/o/Acido%20H.png?alt=media&token=d39ce0ca-9387-4a32-8399-0f9195e4d25d",
+
+        "name6": "Face Scrub",
+        "description6": "",
+        "price6": "65",
+        "img6": "https://firebasestorage.googleapis.com/v0/b/infusionspa-52831.appspot.com/o/Face%20Scrub.png?alt=media&token=d92a3729-dd80-435f-a13b-48060054f530",
+
+        "name7": "Medical grade Retin A",
+        "description7": "",
+        "price7": "120",
+        "img7": "https://firebasestorage.googleapis.com/v0/b/infusionspa-52831.appspot.com/o/Retine%20A.png?alt=media&token=ceb50330-e017-44e5-bd5e-cf441b394ece",
+
+        "name8": "Furry Treatment",
+        "description8": "Infusion Spa also treats your furry family members with a organic ointment that helps with dry cracked nose and paws.",
+        "price8": "7",
+        "img8": "https://firebasestorage.googleapis.com/v0/b/infusionspa-52831.appspot.com/o/Furry%20Treatment.png?alt=media&token=53e1fdb7-86aa-4346-b457-d6e115e6b529",
+
         "productsText": "We give free consultation and orientation for the skin products that you use, but we also advise according to your skin type.",
         "consultText": "Get a Consultation"
     },
@@ -146,7 +186,7 @@
         "schedulerSubtitle": "We are excited to meet you and help you.",
         "schedulerFormName": "Full Name",
         "schedulerService": "Service",
-        "schedulerPhone": "Phone Number",   
+        "schedulerPhone": "Phone Number",
         "schedulerMail": "E-mail",
         "schedulerDate": "Preferred Date",
         "schedulerHour": "Preferred Hour",
@@ -156,7 +196,7 @@
     "FOOTER": {
         "home": "Home",
         "products": "Products",
-        "clients": "Clients",
+        "clients": "Reviews",
         "reviews" : "Reviews",
         "aboutJacky" : "About Jacky",
         "bookNow": "BOOK NOW!"

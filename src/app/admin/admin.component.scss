@@ -70,9 +70,9 @@ h2{
 }
 
 #logoutBtn{
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
+    position: absolute;
+    right: 50px;
+    top: 55px;
     width: 100px;
     padding: 6px;
     text-align: center;
@@ -147,7 +147,7 @@ h2{
     background-color: rgba(141, 197, 181, 1);
 }
 
-input{
+input, select{
     position: relative;
     margin-top: 10px;
     margin-bottom: 10px;

@@ -10,6 +10,7 @@ export class SingleProductComponent implements OnInit {
   @Input() name:string;
   @Input() text:string;
   @Input() price:number;
+  @Input() showPaws:boolean;
 
   constructor() { }
 

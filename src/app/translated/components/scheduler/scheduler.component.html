@@ -7,39 +7,38 @@
         <i class="fas fa-phone-alt" style="color: #71c0ab;"></i>
         <span>214-909-0703</span><br>
         <i class="far fa-envelope" style="color: #71c0ab;"></i>
-        <span>infusionspa@contact.com</span><br>
+        <span>info@infusion-spa.com</span><br>
         <i class="fas fa-map-marker-alt" style="color: #71c0ab;"></i>
         <span>Firewheel Salons 4280 Lavon Drive<br>Garland, Tx 75040. Suite #27</span>
     </p>
     <form id="bookingForm">
         <div class="asteriskDiv"><p>*</p><input [(ngModel)]="booking.Nombre" type="text" id="fullNameField" name="Nombre" class="formFullWidth" placeholder="{{ 'SCHEDULER.schedulerFormName' | translate }}"></div>
         <div class="asteriskDiv"><p>*</p><select [(ngModel)]="booking.Tratamiento" name="Tratamiento" id = "myList" class="formFullWidth">
-            <option value="" selected disabled>{{ 'SCHEDULER.schedulerService' | translate }}</option>
-            <option value = "{{tratamiento.treatment}}" *ngFor="let tratamiento of schedulerTreatments" class="scheduleOption">{{tratamiento.treatment}}</option>
+            <option value="" selected disabled>{{'SCHEDULER.schedulerService' | translate }}</option>
+            <option value ="{{tratamiento.treatment}}" *ngFor="let tratamiento of schedulerTreatments" class="scheduleOption">{{tratamiento.treatment}}</option>
         </select></div>
         <div class="asteriskDivHalf firstInput"><p>*</p><input [(ngModel)]="booking.Telefono" name="Telefono" type="text" id="phoneField" name="phoneNumber" class="formHalfWidth " placeholder="{{ 'SCHEDULER.schedulerPhone' | translate }}"></div>
         <div class="asteriskDivHalf lastInput"><p>*</p><input [(ngModel)]="booking.Email" name="Email" type="text" id="emailField" name="eMail" class="formHalfWidth " placeholder="{{ 'SCHEDULER.schedulerMail' | translate }}"></div>
-        <div class="asteriskDivHalf firstInput"><p>*</p><select [(ngModel)]="booking.Fecha" name="Fecha" id ="myList" class="formHalfWidth ">
-            <option value="" selected disabled>{{ 'SCHEDULER.schedulerDate' | translate }}</option>   
-            <option value = "2">two</option>
-            <option value = "3">three</option>
-            <option value = "4">four</option>
-        </select></div>
+        <div class="asteriskDivHalf firstInput"><p>*</p><input [(ngModel)]="booking.Fecha" type="date" name="Fecha" class="formHalfWidth"
+            value="2020-10-24"
+            min="2020-10-24" max="2021-04-31" format="DD/MM/YYYY"><div id="dateBlock"></div>
+        </div>
         <div class="asteriskDivHalf lastInput"><p>*</p><select [(ngModel)]="booking.Hora" name="Hora" id = "myList" class="formHalfWidth ">
-            <option value="" selected disabled>{{ 'SCHEDULER.schedulerHour' | translate }}</option>
-            <option value ="7:00">7:00</option>
-            <option value ="8:00">8:00</option>
-            <option value ="9:00">9:00</option>
-            <option value ="10:00">11:00</option>
-            <option value ="11:00">12:00</option>
-            <option value ="12:00">13:00</option>
-            <option value ="13:00">14:00</option>
-            <option value ="14:00">15:00</option>
-            <option value ="15:00">16:00</option>
-            <option value ="16:00">17:00</option>
+            <option value="" selected disabled>{{'SCHEDULER.schedulerHour' | translate }}</option>
+            <option value ="10:00">10:00</option>
+            <option value ="11:00">11:00</option>
+            <option value ="12:00">12:00</option>
+            <option value ="13:00">13:00</option>
+            <option value ="14:00">14:00</option>
+            <option value ="15:00">15:00</option>
+            <option value ="16:00">16:00</option>
+            <option value ="17:00">17:00</option>
+            <option value ="18:00">18:00</option>
+            <option value ="19:00">19:00</option>
         </select></div>
         <input type="submit" value="{{ 'SCHEDULER.schedulerBookBtn' | translate }}" id="schedulerBookBtn" (click)="submit()">
     </form>
     <p id="disclaimerText"><span style="color:#71c0ab;">*</span> {{ 'SCHEDULER.disclaimer' | translate }}</p>
+    <div class="petalMobile" id="petal22" ><img src="./assets/img/petal1.png" class="petalImg"></div>
 </div>
 <img src="../../../../assets/img/booking.PNG" id="bookingImg">

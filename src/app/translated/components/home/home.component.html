@@ -14,11 +14,11 @@
     </a>
 </div>
 <div id="navbarLinksMobile">
-    <a (click)="scroll('intro')">{{'NAVBAR.home'| translate }}</a>
-    <a (click)="scroll('treatments')">{{'NAVBAR.treatments' | translate }}</a>
-    <a (click)="scroll('products')">{{'NAVBAR.products' | translate }}</a>
-    <a (click)="scroll('reviews')">{{'NAVBAR.reviews' | translate }}</a>
-    <a (click)="scroll('aboutJacky')">{{'NAVBAR.aboutJacky' | translate }}</a>
+    <a (click)="scrollAndClose('intro')">{{'NAVBAR.home'| translate }}</a>
+    <a (click)="scrollAndClose('treatments')">{{'NAVBAR.treatments' | translate }}</a>
+    <a (click)="scrollAndClose('products')">{{'NAVBAR.products' | translate }}</a>
+    <a (click)="scrollAndClose('aboutJacky')">{{'NAVBAR.aboutJacky' | translate }}</a>
+    <a (click)="scrollAndClose('reviews')">{{'NAVBAR.reviews' | translate }}</a>
 </div>
 
 <app-intro-section id="intro"></app-intro-section>

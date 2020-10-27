@@ -1,8 +1,17 @@
-#introImg{
+.introImg{
     width: 60%;
-    max-width: 550px;
-    max-height: 550px;
-    margin-left: 5%;
+    max-width: 750px;
+    left: 5%;
+    margin-left: 0%;
+}
+
+#introImgAnimated{
+    animation: introImgAnimation 1s 1;
+}
+
+@keyframes introImgAnimation{
+    from {margin-left: -50%;}
+    to {margin-left: 0%;}
 }
 
 #introText{
@@ -11,8 +20,9 @@
     align-items: center;
     justify-content: center;
     display: flex;
-    right: -150px;
+    right: 50px;
     position: relative;
+    z-index: 12;
 }
 
 #introLogo{
@@ -33,22 +43,27 @@
     color: white;
     font-size: 12px;
     letter-spacing: 2px;
+    transition: 1s;
+}
+
+.bookBtn:hover{
+    background-color: #8DC5B5;
 }
 
 @media only screen and (max-width: 1400px){
     #introText{
-        right: -20px;
+        right: 40px;
     }
 
     #introLogo{
-        width: 60%;
+        width: 100%;
         min-width: 350px;
     }
 }
 
 @media only screen and (max-width: 1000px){
-    #introImg{
-        width: 100%;
+    .introImg{
+        width: 100vw;
         max-width: none;
         max-height: none;
         margin: 0;

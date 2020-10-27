@@ -19,6 +19,7 @@ i{
 #navigationSection{
     padding-left: 10%;
     padding-top: 50px;
+    padding-bottom: 40px;
 }
 
 #navigationSection a{
@@ -34,6 +35,11 @@ i{
     color: white;
     font-size: 12px;
     letter-spacing: 2px;
+    transition: 1s;
+}
+
+#footerBookBtn:hover{
+    background-color: #8DC5B5;
 }
 
 #logoSection{

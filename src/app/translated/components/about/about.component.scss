@@ -2,10 +2,10 @@
     position: relative;
     background-image: url("../../../../assets/img/Jacky.jpeg");
     background-size: 100%;
-    background-position: 0 -50px;
-    margin-top: 150px;
+    background-position: 0 0;
+    margin-top: 0;
     width: 450px;
-    height: 270px;
+    height: 450px;
 }
 
 #aboutLogo{
@@ -20,6 +20,7 @@
     width: 40%;
     margin-left: 5%;
     color: white;
+    z-index: 13;
 }
 
 #aboutTitle{
@@ -94,6 +95,11 @@
     letter-spacing: 2px;
     font-size: 12px;
     text-transform: uppercase;
+    transition: 1s;
+}
+
+#aboutBtn:hover{
+    background-color: #8DC5B5;
 }
 
 @media only screen and  (max-width: 800px){
@@ -101,6 +107,7 @@
         width: 85%;
         max-width: 480px;
         min-width: 320px;
+        margin-top: 100px;
     }
 
     #aboutInfo{
@@ -111,9 +118,10 @@
     }
 
     #aboutTitle{
-        margin-top: -380px;
-        margin-bottom: 380px;
-        font-size: 30px;
+        margin-top: -520px;
+        margin-bottom: 520px;
+        font-size: 35px;
+        letter-spacing: 0;
     }
 
     #aboutText{
@@ -141,5 +149,50 @@
     #aboutBtn{
         width: 70%;
         text-align: center;
+    }
+
+    #petal16{
+        top: 50px;
+        right: 0;
+        z-index: 1;
+    }
+
+    #petal17{
+        top: -50px;
+        left: 0;
+        z-index: 12;
+    }
+
+    #petal18{
+        top: 900px;
+        left: 0;
+        z-index: 13;
+    }
+
+    #petal19{
+        top: 1130px;
+        left: 5%;
+        z-index: 10;
+    }
+
+    #petal20{
+        top: 1420px;
+        right: -10%;
+        z-index: 13;
+    }
+
+}
+
+@media only screen and ( max-width: 520px){
+
+    #aboutTitle{
+        margin-top: -420px;
+        margin-bottom: 420px;
+        font-size: 32px;
+    }
+
+    #aboutImg{
+        width: 320px;
+        height: 330px;
     }
 }

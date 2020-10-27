@@ -15,6 +15,7 @@ export class HomeComponent implements OnInit {
    }
 
   ngOnInit(): void {
+    setTimeout(() => {document.getElementsByClassName('introImg')[0].id =''}, 1000)
   }
 
   public toggleMenu():void{
@@ -22,6 +23,13 @@ export class HomeComponent implements OnInit {
 
     menu.classList.toggle("hamburgerMenuVisible")
 
+  }
+
+  scrollAndClose(id:string){
+    this.scroll(id)
+    var menu = document.getElementById('navbarLinksMobile');
+
+    menu.classList.toggle("hamburgerMenuVisible")
   }
 
   scroll(id:string) {
@@ -42,6 +50,10 @@ export class HomeComponent implements OnInit {
     document.getElementsByClassName('chosenLangBtn')[0].classList.remove("chosenLangBtn");
     document.getElementById(btn).classList.add('chosenLangBtn');
     this.translate.use(language)
+    document.getElementsByClassName('introImg')[0].id =''
+    document.getElementsByClassName('introImg')[0].id = 'introImgAnimated';
+    setTimeout(() => {document.getElementsByClassName('introImg')[0].id =''}, 1000)
+    
   }
 
 }

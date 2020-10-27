@@ -1,6 +1,13 @@
 <p id="productsTitle">{{ 'PRODUCTS.productsTitle' | translate }}</p>
 <div id="productsWrapper">
-    <app-single-product [imgSrc]="producto.image" [name]="producto.name" [text]="producto.description" [price]=producto.price *ngFor="let producto of productosLista"></app-single-product>
+    <app-single-product [imgSrc]="product1Img" [name]="product1Name" [text]="product1Description" [price]="product1Price" [showPaws]=false></app-single-product>
+    <app-single-product [imgSrc]="product2Img" [name]="product2Name" [text]="product2Description" [price]="product2Price" [showPaws]=false></app-single-product>
+    <app-single-product [imgSrc]="product3Img" [name]="product3Name" [text]="product3Description" [price]="product3Price" [showPaws]=false></app-single-product>
+    <app-single-product [imgSrc]="product4Img" [name]="product4Name" [text]="product4Description" [price]="product4Price" [showPaws]=false></app-single-product>
+    <app-single-product [imgSrc]="product5Img" [name]="product5Name" [text]="product5Description" [price]="product5Price" [showPaws]=false></app-single-product>
+    <app-single-product [imgSrc]="product6Img" [name]="product6Name" [text]="product6Description" [price]="product6Price" [showPaws]=false></app-single-product>
+    <app-single-product [imgSrc]="product7Img" [name]="product7Name" [text]="product7Description" [price]="product7Price" [showPaws]=false></app-single-product>
+    <app-single-product [imgSrc]="product8Img" [name]="product8Name" [text]="product8Description" [price]="product8Price" [showPaws]=true></app-single-product>
 </div>
 <p id="productsText">{{ 'PRODUCTS.productsText' | translate }}</p>
 <a id="consultBtn" (click)="scroll('book')">{{ 'PRODUCTS.consultText' | translate }}</a>

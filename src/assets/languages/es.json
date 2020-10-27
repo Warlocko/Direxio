@@ -4,8 +4,8 @@
         "treatments": "Tratamientos",
         "products" : "Productos",
         "aboutJacky" : "Acerca de Jacky",
-        "reviews" : "Clientes",
-        "bookNow" : "¡Haz tu cita!"
+        "reviews" : "Reseñas",
+        "bookNow" : "¡HAZ TU CITA!"
     },
     "INTRO": {
         "introText": "Más que cuidar tu piel, te damos un apapacho.",
@@ -23,7 +23,7 @@
                 "description": "Un peeling químico es una técnica que se usa para mejorar la apariencia de la piel del rostro, cuello, manos y cuerpo. Es aplicada a través de una solución química que permite que la piel se exfolie y se vuelva a texturizar al remover las capas externas. Causa un efecto de suavidad en la piel. Esto puede causar sensibilidad a la exposición solar los primeros días.",
                 "img": "../../../../../assets/img/Face/1.png"
             },{
-                "name": "MICRODERMOABRASIÓN",
+                "name": "MICRO-DERMOABRASIÓN",
                 "description": "A través de una instrumento ligeramente abrasivo exfoliamos tu piel de tal forma que la capa de la superficie de tu piel es removida. Este tipo de rejuvenecimiento beneficia a la piel para disminuir las cicatrices, decoloraciones, manchas de sol y estrías. Así mismo reduce las líneas de expresión y arrugas, cierra los poros abiertos y disminuye las cicatrices causadas por el acné. También te ayuda a fortalecer tu colágeno.",
                 "img": "../../../../../assets/img/Face/2.png"
             },{
@@ -39,7 +39,7 @@
                 "description": "A través de una cuchilla dermatológica se remueven las células y vello logrando un efecto de luminosidad en la piel. Este tratamiento puede ser combinado con cualquier facial que elijas.",
                 "img": "../../../../../assets/img/Face/5.png"
             },{
-                "name": "FACIAL DETOX + MICRODERMOABRASIÓN",
+                "name": "FACIAL DETOX + MICRO-DERMOABRASIÓN",
                 "description": "Es un facial que dura entre 45 y 60 minutos en el que se aplican vapor, extracciones y una máscara facial para remover todas las células muertas causadas por la contaminación en el aire.",
                 "img": "../../../../../assets/img/Face/6.png"
             },{
@@ -67,10 +67,6 @@
                 "description": "Este trataiento remueve los puntos negros y espinillas producidos por la contaminación. Afeita protuberancias y vello enroscado, así mismo mata las bacterias que se acumulan en los poros. Además de dejar la piel lisa y suave, este tratamiento reduce las manchas de sol.",
                 "img": "../../../../../assets/img/Face/12.png"
             },{
-                "name": "PEELING PERSONALIZADO",
-                "description": "Si buscas que tu piel se vea joven, más vibrante y firme, entonces agenda tu cita para las sesiones personalizadas de peeling. El peeling ayuda que se renueve y se restaure la superficie de tu piel, ya que elimina la primera capa de tu piel de tal manera que ésta quede lisa.",
-                "img": "../../../../../assets/img/Face/13.png"
-            },{
                 "name": "TRATAMIENTO DE ROSÁCEA",
                 "description": "Reduce la inflamación de  la piel.",
                 "img": "../../../../../assets/img/Face/14.png"
@@ -78,6 +74,10 @@
                 "name": "ESTIRAMIENTO DE LA PIEL NO QUIRÚRGICO",
                 "description": "Minimiza la apariencia flácida de la piel, reduce las arrugas a través del incremento de colágeno.",
                 "img": "../../../../../assets/img/Face/15.png"
+            },{
+                "name": "PEELING PERSONALIZADO",
+                "description": "Si buscas que tu piel se vea joven, más vibrante y firme, entonces agenda tu cita para las sesiones personalizadas de peeling. El peeling ayuda que se renueve y se restaure la superficie de tu piel, ya que elimina la primera capa de tu piel de tal manera que ésta quede lisa.",
+                "img": "../../../../../assets/img/Face/13.png"
             }
         ],
         "bodyTreatments": [
@@ -121,6 +121,46 @@
     "PRODUCTS": {
         "productsTitle": "Nuestros productos",
         "productsText": "Te orientamos en el uso de cremas y productos que usas de acuerdo a tu tipo de piel.",
+        "name1": "Crema de Día 4oz",
+        "description1": "Fórmulas personalizadas para piel mixa o seca.",
+        "price1": "35",
+        "img1": "https://firebasestorage.googleapis.com/v0/b/infusionspa-52831.appspot.com/o/Day%20Cream.png?alt=media&token=b3f09c07-b127-4680-8bdf-045e1d72ee7b",
+        
+        "name2": "Crema de Noche 4oz",
+        "description2": "Fórmulas personalizadas para piel mixa o seca.",
+        "price2": "40",
+        "img2": "https://firebasestorage.googleapis.com/v0/b/infusionspa-52831.appspot.com/o/Night%20Cream.png?alt=media&token=283d14c1-e867-4eae-a506-a24ae5ff0e8b",
+
+        "name3": "Crema Día y Noche",
+        "description3": "Fórmula para piel grasa",
+        "price3": "45",
+        "img3": "https://firebasestorage.googleapis.com/v0/b/infusionspa-52831.appspot.com/o/Day%20_%20Night.png?alt=media&token=fedf6a91-d7a7-42f6-8a3c-2a6a522ad031",
+
+        "name4": "Crema para Contorno de Ojos",
+        "description4": "",
+        "price4": "35",
+        "img4": "https://firebasestorage.googleapis.com/v0/b/infusionspa-52831.appspot.com/o/Eye%20Cream.png?alt=media&token=36c0a24c-9992-40a8-966f-61624a370853",
+
+        "name5": "Ácido Hialurónico",
+        "description5": "",
+        "price5": "65",
+        "img5": "https://firebasestorage.googleapis.com/v0/b/infusionspa-52831.appspot.com/o/Acido%20H.png?alt=media&token=d39ce0ca-9387-4a32-8399-0f9195e4d25d",
+
+        "name6": "Exfoliante de Rostro",
+        "description6": "",
+        "price6": "65",
+        "img6": "https://firebasestorage.googleapis.com/v0/b/infusionspa-52831.appspot.com/o/Face%20Scrub.png?alt=media&token=d92a3729-dd80-435f-a13b-48060054f530",
+
+        "name7": "Medical grade Retin A",
+        "description7": "",
+        "price7": "120",
+        "img7": "https://firebasestorage.googleapis.com/v0/b/infusionspa-52831.appspot.com/o/Retine%20A.png?alt=media&token=ceb50330-e017-44e5-bd5e-cf441b394ece",
+
+        "name8": "Tratamiento Para Mascotas",
+        "description8": "Infusion Spa también cuida a tus mascotas con un tratamiento orgánico que ayuda con almohadillas y narices secas y agrietadas.",
+        "price8": "7",
+        "img8": "https://firebasestorage.googleapis.com/v0/b/infusionspa-52831.appspot.com/o/Furry%20Treatment.png?alt=media&token=53e1fdb7-86aa-4346-b457-d6e115e6b529",
+
         "consultText": "Haz tu consulta"
     },
     "ABOUT": {
@@ -141,10 +181,10 @@
         "swipeText": "Haz click en las flechas para explorar las reseñas o salta a una reseña con los botones encima."
     },
     "SCHEDULER": {
-        "schedulerTitle": "Book Now",
+        "schedulerTitle": "Anticipa tu Cita",
         "schedulerSubtitle": "Nos entusiasma tenerte en nuestro estudio\npara atenderte y ayudarte. ",
-        "schedulerFormName": "Nombre Completo",
-        "schedulerService": "Escoge tu Tratamiento",
+        "schedulerFormName": "Nombre completo",
+        "schedulerService": "Servicio",
         "schedulerPhone": "Número celular",
         "schedulerMail": "Correo electrónico",
         "schedulerDate": "Fecha preferida",
@@ -156,7 +196,7 @@
         "home": "Inicio",
         "treatments": "Tratamientos",
         "products": "Productos",
-        "clients": "Clientes",
+        "clients": "Reseñas",
         "aboutJacky" : "Acerca de Jacky",
         "bookNow": "¡Haz tu cita!"
     }

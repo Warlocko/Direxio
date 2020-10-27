@@ -1,7 +1,47 @@
 <div id="adminBackground">
     <div id="adminWrapper">
         <h2 style="margin-bottom: 30px;">¡Bienvenida, Jacky!</h2>
-        <h2>Productos</h2>
+        <button id="logoutBtn" (click)="logout()">Cerrar Sesión</button>
+        <h2>Citas Agendadas</h2>
+        <div class="tableWrapper">
+            <div class="tableRow">
+                <p>Nombre</p>
+                <p>Tratamiento</p>
+                <p>Email</p>
+                <p>Teléfono</p>
+                <p>Fecha</p>
+                <p>Hora</p>
+            </div>
+            <div *ngFor="let booking of bookingsList" class="tableRow">
+                <p>{{booking.Nombre}}</p>
+                <p>{{booking.Tratamiento}}</p>
+                <p>{{booking.Email}}</p>
+                <p>{{booking.Telefono}}</p>
+                <p>{{booking.Fecha}}</p>
+                <p>{{booking.Hora}}</p>
+                <i class="fas fa-times deleteIcon" (click)="deleteBooking(booking.id)"></i>
+            </div>
+        </div>
+        <button class="addProductBtn" (click)="showProductForm()">Apartar horario</button>
+        <form id="productForm">
+            <input [(ngModel)]=booked.Fecha type="date" name="Fecha" placeholder="Fecha a apartar"
+            min="2020-10-24" max="2021-04-31" format="DD/MM/YYYY" required/>
+            <select name="hora" [(ngModel)]=booked.Hora>
+                <option value="" selected disabled>Selecciona una hora</option>
+                <option value ="10:00">10:00</option>
+                <option value ="11:00">11:00</option>
+                <option value ="12:00">12:00</option>
+                <option value ="13:00">13:00</option>
+                <option value ="14:00">14:00</option>
+                <option value ="15:00">15:00</option>
+                <option value ="16:00">16:00</option>
+                <option value ="17:00">17:00</option>
+                <option value ="18:00">18:00</option>
+                <option value ="19:00">19:00</option>
+            </select>
+            <input type="submit" (click)="addBooking()" value="Apartar" class="addProductBtn" id="addProductFormBtn">
+        </form>
+        <!--<h2>Productos</h2>
         <div class="tableWrapper" style="margin-bottom: 30px;">
             <div class="productosRow">
                 <p>Nombre</p>
@@ -24,37 +64,7 @@
             <input [(ngModel)]=product.price type="number" name="price" placeholder="Precio del producto" required/>
             <input [(ngModel)]=product.image type="text" name="imageUrl" placeholder="URL de la imagen del producto" required/>
             <input type="submit" (click)="addProduct()" value="Agregar" class="addProductBtn" id="addProductFormBtn">
-        </form>
-        <h2>Citas Agendadas</h2>
-        <div class="tableWrapper">
-            <div class="tableRow">
-                <p>Nombre</p>
-                <p>Tratamiento</p>
-                <p>Email</p>
-                <p>Telefono</p>
-                <p>Fecha</p>
-                <p>Hora</p>
-            </div>
-            <div *ngFor="let booking of bookingsList" class="tableRow">
-                <p>{{booking.Nombre}}</p>
-                <p>{{booking.Tratamiento}}</p>
-                <p>{{booking.Email}}</p>
-                <p>{{booking.Telefono}}</p>
-                <p>{{booking.Fecha}}</p>
-                <p>{{booking.Hora}}</p>
-                <i class="fas fa-times deleteIcon" (click)="deleteBooking(booking.id)"></i>
-            </div>
-        </div>
-        <mat-form-field class="example-full-width" appearance="fill">
-            <mat-label>Choose a date</mat-label>
-            <input matInput [matDatepicker]="picker">
-            <mat-datepicker-toggle matSuffix [for]="picker">
-              <mat-icon matDatepickerToggleIcon>keyboard_arrow_down</mat-icon>
-            </mat-datepicker-toggle>
-            <mat-datepicker #picker></mat-datepicker>
-          </mat-form-field>
+        </form>-->
     </div>
 </div>
-
-<button id="logoutBtn" (click)="logout()">Cerrar Sesión</button>
 

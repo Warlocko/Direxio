@@ -26,7 +26,8 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { HomeComponent } from './translated/components/home/home.component';
 import { AdminComponent } from './admin/admin.component';
 import { AdminSignupComponent } from './admin-signup/admin-signup.component';
-import { MatDatepickerModule } from '@angular/material/datepicker'
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations'
 
 const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
   direction: 'horizontal',
@@ -71,7 +72,8 @@ export function HttpLoaderFactory(http: HttpClient){
           deps: [HttpClient]
         }
       }
-    )
+    ),
+    NoopAnimationsModule
   ],
   providers: [
     {
