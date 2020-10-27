@@ -23,8 +23,9 @@ export class AppComponent {
     })
      
     translate.addLangs(['en', 'es'])
-    translate.setDefaultLang('es')
-    this.translate.use('es')
+    translate.setDefaultLang('en')
+    setTimeout(()=> {this.translate.use('en')},100)
+    console.log(this.translate.currentLang)
   }
 
   

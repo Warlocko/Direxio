@@ -177,6 +177,10 @@ app-footer{
         padding-bottom: 30px;
     }
 
+    app-scheduler{
+        padding-bottom: 400px;
+    }
+
     #navbarLinks a{
         margin-left: 15px;
     }
@@ -266,7 +270,7 @@ app-footer{
     }
 
     app-scheduler{
-        padding-bottom: 150px;
+        padding-bottom: 450px;
     }
 
     app-footer{
@@ -274,4 +278,8 @@ app-footer{
         text-align: center;
         padding-bottom: 20px;
     }
+}
+
+@media only screen and (min-width: 1250px){
+
 }
