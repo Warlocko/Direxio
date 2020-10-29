@@ -191,7 +191,10 @@
         "schedulerDate": "Preferred Date",
         "schedulerHour": "Preferred Hour",
         "schedulerBookBtn": "BOOK NOW!",
-        "disclaimer": "If we don't answer, please leave a message. We will get back to you as soon as possible. \n Thank you"
+        "disclaimer": "If we don't answer, please leave a message. We will get back to you as soon as possible. \n Thank you",
+        "alert1": "This hour has been booked. \n Please select a different hour.",
+        "alert2": "Please fill out all your information to book your appointment.",
+        "alert3": "Your appointment has been succesfully booked!"
     },
     "FOOTER": {
         "home": "Home",

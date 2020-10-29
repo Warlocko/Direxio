@@ -87,7 +87,7 @@ export class AdminComponent implements OnInit {
   }
 
   addBooking(){
-    if (this.bookingsList.some(e => e.Fecha === this.booked.Fecha) && this.bookingsList.some(e => e.Hora === this.booked.Hora)) {
+    if (this.bookingsList.some(e => e.Fecha == moment(this.booked.Fecha).format('MM/DD/YYYY') && e.Hora == this.booked.Hora) ) {
       alert('Ese espacio ya está apartado.\n Favor de seleccionar otro.')
     }else if(this.booked.Fecha=="" || this.booked.Hora==""){
       alert('Por favor llena fecha y hora para apartar.')

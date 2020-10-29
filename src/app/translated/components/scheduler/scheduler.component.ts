@@ -23,6 +23,7 @@ export class SchedulerComponent implements OnInit {
   todayDate = new Date()
   maxDate = new Date()
   myFilter
+  translations
 
   constructor(private translate: TranslateService, private bookingService : BookingsService) {
     this.maxDate.setDate(this.todayDate.getDate() + 365)
@@ -36,6 +37,7 @@ export class SchedulerComponent implements OnInit {
       return day !== 0;
     }
     this.translate.stream('SCHEDULER').subscribe(res => {
+      this.translations = res
       if(this.translate.currentLang=='en'){
         this.schedulerTreatments = [
           {treatment: "Chemical Peels"},
@@ -101,14 +103,14 @@ export class SchedulerComponent implements OnInit {
 
   submit(){
     console.log(this.booking)
-    if (this.bookingsList.some(e => e.Fecha === this.booking.Fecha) && this.bookingsList.some(e => e.Hora === this.booking.Hora)) {
-      alert('Ese espacio ya está apartado.\n Favor de seleccionar otro.')
+    if (this.bookingsList.some(e => e.Fecha == moment(this.booking.Fecha).format('MM/DD/YYYY') && e.Hora == this.booking.Hora))  {
+      alert(this.translations.alert1)
     }else if(this.booking.Nombre=="" || this.booking.Tratamiento=="" || this.booking.Email=="" || this.booking.Telefono=="" || this.booking.Fecha=="" || this.booking.Hora==""){
-      alert('Por favor llene todos los campos para agendar su cita.')
+      alert(this.translations.alert2)
     }else{
       this.booking.Fecha = moment(this.booking.Fecha).format('MM/DD/YYYY')
       this.bookingService.addBooking(this.booking);
-      alert('Su cita ha sido agendada con éxito.')
+      alert(this.translations.alert3)
     }
   }
 }
