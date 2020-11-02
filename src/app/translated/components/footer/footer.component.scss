@@ -75,9 +75,25 @@ i{
     line-height: 18px;
 }
 
+.addressSpan{
+    margin-left: 24px;
+}
+
+.markerIcon{
+    margin-right: 13.5px !important;
+}
+
 @media only screen and (max-width: 800px){
     .footerSection{
         width: 100%;
+    }
+
+    .addressSpan{
+        margin-left: 0;
+    }
+    
+    .addressbr{
+        display: none;
     }
 
     #logoSection{

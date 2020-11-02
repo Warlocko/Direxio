@@ -186,6 +186,14 @@ text-shadow: 0 0 0 #000;
     opacity: 1;
 }
 
+.addressSpan{
+    margin-left: 24.5px;
+}
+
+.markerIcon{
+    margin-right: 13.5px !important;
+}
+
 
 .formFullWidth{
     width: 100%;
@@ -251,6 +259,14 @@ text-shadow: 0 0 0 #000;
     #schedulerTitle{
         padding-left: 0%;
         letter-spacing: 1px;
+    }
+
+    .addressSpan{
+        margin-left: 34.8px;
+    }
+
+    .markerIcon{
+        margin-right: 15.5px !important;
     }
 
     #schedulerSubtitle{
@@ -322,6 +338,10 @@ text-shadow: 0 0 0 #000;
     #schedulerTitle{
         padding-left: 20px;
         padding-right: 20px;
+    }
+
+    .addressSpan{
+        margin-left: 33px;
     }
 
     #schedulerSubtitle{

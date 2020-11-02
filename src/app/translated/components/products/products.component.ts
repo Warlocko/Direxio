@@ -41,6 +41,7 @@ export class ProductsComponent implements OnInit {
   product8Description
   product8Img
   product8Price
+  
 
   productosLista;
 
